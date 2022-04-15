@@ -1,0 +1,155 @@
+/*-------Общие стили-----*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+/* Указываем box sizing */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  scroll-behavior: smooth;
+  /* text-rendering: optimizeSpeed;*/
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+mark {
+  background-color: #ff9;
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}
+
+time {}
+
+/*--------Стили для списков-------------*/
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul,
+li {
+  list-style: none;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+li[class] {
+  padding: 0;
+}
+
+/*--------Стили для заголовков------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+
+
+/*--------------Стили для картинок------------*/
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+  vertical-align: top;
+}
+
+/*-------------Стили для ссылок------------*/
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*----------------Стили для кнопок-----------------*/
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/*-------Стили для инпутов--------*/
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+/*------------?????????????-------*/
+article>*+* {
+  margin-top: 1em;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*стили для main,чтобы прижать footer к низу*/
+main {
+  flex: 1 1 auto;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/

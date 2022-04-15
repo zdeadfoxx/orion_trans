@@ -1,0 +1,242 @@
+/**/
+/*Импорт обнуляющих стилей*/
+@import '_reset.scss';
+
+/**/
+/**/
+/**/
+/*Подключение для страницы*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;900&display=swap');
+/**/
+// /*Цвет для основной страницы*/
+$background-color:#fff;
+// /*Цвет для основного цвета*/
+// /*Основной шрифт для сайта*/
+$main_font-family: 'Montserrat',
+sans-serif;
+// /*Вторичный шрифт для сайта*/
+$second_font-family:'ZCOOL KuaiLe',
+cursive;
+// /*Основной размер текста на сайте*/
+$main_font-size: 24px;
+
+/*Стили для body*/
+body {
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-size: $main_font-size;
+    background-color: $background-color;
+    font-family: $main_font-family;
+}
+
+/*Модификаторы для повторяющихся стилей*/
+.btn {
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    border: 2px solid orange;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn a,
+span {
+    align-items: center;
+    text-align: center;
+    color: #000;
+}
+
+/*Изменения цвета при наведении*/
+.btn:hover {
+    background: orange;
+    transition: all 0.4s ease-in-out 0.1s;
+}
+
+/*Основная обертка для сайта*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Ограничивающий контейнер*/
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/*Шапка сайта*/
+.header {
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+
+/*Тело всей шапки*/
+.header__body {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+/*Меню нафвигации в шапке*/
+.menu {
+    display: flex;
+}
+
+.item__menu {
+    margin: 0 20px;
+    color: #000;
+}
+
+/*При наведении на элементы меню*/
+.item__menu:hover {
+    text-decoration: underline;
+    transition: all 0.4s linear 0.2s;
+}
+
+/*Активная вкладка на сайте*/
+.active {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*Кнопка в шарке*/
+// .menu__from-btn {
+//     height: 60px;
+//     border: 2px solid orange;
+//     padding: 10px;
+//     border-radius: 10px;
+//     color: #000;
+// }
+
+// /**/
+// .menu__from-btn:hover {
+//     background: orange;
+//     transition: all 0.4s ease-in-out 0.1s;
+// }
+
+/*Начальная страница*/
+.full__screen {
+
+    width: 100%;
+    height: auto;
+    padding: 200px;
+    margin-bottom: 100px;
+}
+
+/*Тело main*/
+.body__title {
+    font-size: 64px;
+    font-weight: 900;
+    margin-bottom: 25px;
+
+}
+
+.body__text {
+    line-height: 1.5;
+    margin: 100px 0;
+}
+
+.body__btn {
+    max-width: 400px;
+}
+
+/*заявка*/
+// .body__btn {
+//     height: 60px;
+//     border: 2px solid orange;
+//     padding: 10px;
+//     border-radius: 10px;
+// }
+
+// .body__btn a {
+//     color: #000;
+// }
+
+// .body__btn:hover {
+//     background: orange;
+//     transition: all 0.4s ease-in-out 0.1s;
+// }
+
+/*Наши услуги*/
+.services__top,
+.services__bottom {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Карточка начих услуг*/
+.services__card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services__title {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 64px;
+    font-weight: 900;
+}
+
+
+.services__card {
+    opacity: 0.5;
+    background-color: rgba(128, 128, 128, 0.434);
+    min-width: 600px;
+    padding: 30px;
+    max-width: 800px;
+    border-radius: 10px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services__card:hover {
+    opacity: 1;
+}
+
+.card__title {
+    font-size: 48px;
+    margin-bottom: 40px;
+
+}
+
+.services__text {
+    margin-bottom: 30px;
+}
+
+/*Форма заявки на услугу*/
+.form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/**/
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    border: 2px solid #000;
+    padding: 40px;
+}
+
+.form__btn {}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
