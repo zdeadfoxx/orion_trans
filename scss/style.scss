@@ -28,6 +28,7 @@ body {
     font-size: $main_font-size;
     background-color: $background-color;
     font-family: $main_font-family;
+    scroll-behavior: smooth;
 }
 
 /*Модификаторы для повторяющихся стилей*/
@@ -47,6 +48,28 @@ span {
     align-items: center;
     text-align: center;
     color: #000;
+}
+
+.call__back {
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    border: 2px solid orange;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+}
+
+.call__back a {
+    align-items: center;
+    text-align: center;
+    color: #000;
+}
+
+.call__back {
+    color: #fff;
 }
 
 /*Изменения цвета при наведении*/
@@ -74,6 +97,13 @@ span {
 .header {
     background-color: #fff;
     margin-bottom: 100px;
+
+}
+
+.full__screen {
+    background: url('../img/fulbg.jpg') 0 0/100% 100% no-repeat;
+    max-width: 100%;
+    height: 900px;
 }
 
 /*Тело всей шапки*/
@@ -84,6 +114,12 @@ span {
     align-items: center;
     text-align: center;
 
+}
+
+.border {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    margin-bottom: 50px;
 }
 
 /*Меню нафвигации в шапке*/
@@ -136,14 +172,15 @@ span {
 /*Тело main*/
 .body__title {
     font-size: 64px;
-    font-weight: 900;
     margin-bottom: 25px;
-
+    color: #fff;
+    text-align: center;
 }
 
 .body__text {
     line-height: 1.5;
     margin: 100px 0;
+    color: #fff;
 }
 
 .body__btn {
@@ -167,53 +204,53 @@ span {
 //     transition: all 0.4s ease-in-out 0.1s;
 // }
 
-/*Наши услуги*/
-.services__top,
-.services__bottom {
-    display: flex;
-    justify-content: center;
-
-}
-
-/*Карточка начих услуг*/
-.services__card {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.services__title {
-    text-align: center;
+/**/
+.advantages {
     margin-bottom: 100px;
-    font-size: 64px;
+    background: url('../') 0 0 no-repeat;
+}
+
+.about__title {
+
+    text-align: center;
+}
+
+strong {
     font-weight: 900;
 }
 
-
-.services__card {
-    opacity: 0.5;
-    background-color: rgba(128, 128, 128, 0.434);
-    min-width: 600px;
-    padding: 30px;
-    max-width: 800px;
-    border-radius: 10px;
+.about__list-item {
     margin: 40px;
+}
+
+/**/
+.advantages__top,
+.advantages__bottom {
     display: flex;
-    justify-content: center;
+    margin: 50px;
+}
+
+.advantages__title {
+    text-align: center;
+
+}
+
+.info__title {
+    margin-bottom: 25px;
+}
+
+/**/
+.block__info {
+    text-align: center;
     align-items: center;
+    border: 2px solid #000;
+    margin: 0 40px;
+    padding: 40px;
+    transition: all 0.4s ease-in-out 0.1s;
 }
 
-.services__card:hover {
-    opacity: 1;
-}
-
-.card__title {
-    font-size: 48px;
-    margin-bottom: 40px;
-
-}
-
-.services__text {
-    margin-bottom: 30px;
+.block__info:hover {
+    background-color: gray;
 }
 
 /*Форма заявки на услугу*/
@@ -221,8 +258,15 @@ span {
     align-items: center;
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
     flex-direction: column;
 }
+
+.form__body {
+    display: flex;
+
+}
+
 /**/
 form {
     display: flex;
@@ -230,11 +274,38 @@ form {
     max-width: 600px;
     border: 2px solid #000;
     padding: 40px;
+    margin: 50px;
 }
+
+input {
+    font-size: 30px;
+    padding: 10px;
+    margin: 0 40px;
+
+}
+
+/**/
+.how__we-works {
+    background: url('../img/how__work.jpg') center no-repeat;
+    padding: 200px;
+}
+
+.wr {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
 
 .form__btn {}
 
 /**/
+footer {
+    background-color: gray;
+    padding: 100px;
+}
+
 /**/
 /**/
 /**/
