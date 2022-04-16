@@ -205,7 +205,7 @@ span {
 //     transition: all 0.4s ease-in-out 0.1s;
 // }
 
-/**/
+/*Примущества*/
 .advantages {
     margin-bottom: 100px;
     background: url('../') 0 0 no-repeat;
@@ -224,7 +224,7 @@ strong {
     margin: 40px;
 }
 
-/**/
+/*Карточки с примуществами*/
 .advantages__top,
 .advantages__bottom {
     display: flex;
@@ -240,6 +240,13 @@ strong {
     margin-bottom: 25px;
 }
 
+.advantages__title {
+    font-size: 64px;
+    margin-bottom: 25px;
+    color: #000;
+    text-align: center;
+}
+
 /**/
 .block__info {
     text-align: center;
@@ -252,6 +259,7 @@ strong {
 
 .block__info:hover {
     background-color: gray;
+    color: #fff;
 }
 
 /*Форма заявки на услугу*/
@@ -289,6 +297,7 @@ input {
 .how__we-works {
     background: url('../img/how__work.jpg') center no-repeat;
     padding: 200px;
+
 }
 
 .wr {
@@ -307,7 +316,79 @@ footer {
     padding: 100px;
 }
 
-/**/
+/*burger menu*/
+/*For pc*/
+@media screen and(max-width:1920px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    .burger {
+        display: none;
+    }
+}
+
+@media screen and(max-width:1600px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .form__body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and(max-width:1200px) {
+    .container {
+        max-width: 967px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and(max-width:976px) {
+    .container {
+        max-width: 767px;
+    }
+}
+
+@media screen and(max-width:767px) {
+    .container {
+        max-width: 467px;
+    }
+}
+
+@media screen and (min-width:425) {
+    .container {
+        max-width: 467px;
+    }
+}
+
+@media screen and(max-width:467px) {
+    .container {
+        max-width: none;
+        margin: 0 auto;
+    }
+}
+
+.burger {
+    margin: 20px;
+}
+
+.burger__item {
+    width: 100px;
+    height: 20px;
+    background-color: #000;
+}
+
 /**/
 /**/
 /**/
