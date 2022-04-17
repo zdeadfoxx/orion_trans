@@ -35,7 +35,7 @@ body {
 .btn {
     align-items: center;
     text-align: center;
-    height: 60px;
+    align-self: center;
     border: 2px solid orange;
     padding: 10px;
     border-radius: 10px;
@@ -48,6 +48,14 @@ span {
     align-items: center;
     text-align: center;
     color: #000;
+}
+
+/*Заголовки повторяющиеся*/
+.title {
+    font-size: 64px;
+    margin-bottom: 25px;
+    color: #000;
+    text-align: center;
 }
 
 .call__back {
@@ -82,7 +90,7 @@ span {
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 100vh;
     width: 100%;
     overflow: hidden;
 }
@@ -101,10 +109,25 @@ span {
 }
 
 .full__screen {
-    background: url('../img/fulbg.jpg') 0 0/100% 100% no-repeat;
-    max-width: 100%;
-    height: 900px;
+    background: url('../img/fulbg.jpg') no-repeat center center;
     background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    padding: 20px 0;
+    max-width: 100%;
+
+}
+
+.full__screen-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1 1 auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0;
 }
 
 /*Тело всей шапки*/
@@ -114,7 +137,6 @@ span {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-
 }
 
 .border {
@@ -131,6 +153,7 @@ span {
 .item__menu {
     margin: 0 20px;
     color: #000;
+    font-size: 16px;
 }
 
 /*При наведении на элементы меню*/
@@ -175,7 +198,7 @@ span {
     font-size: 64px;
     margin-bottom: 25px;
     color: #fff;
-    text-align: center;
+    max-width: 800px;
 }
 
 .body__text {
@@ -225,6 +248,13 @@ strong {
 }
 
 /*Карточки с примуществами*/
+.advantages__body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .advantages__top,
 .advantages__bottom {
     display: flex;
@@ -249,66 +279,73 @@ strong {
 
 /**/
 .block__info {
+    justify-content: center;
     text-align: center;
     align-items: center;
     border: 2px solid #000;
     margin: 0 40px;
     padding: 40px;
-    transition: all 0.4s ease-in-out 0.1s;
+    border-radius: 10px;
+    max-width: 800px;
+    flex: 0 1 33.3333%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .block__info:hover {
     background-color: gray;
     color: #fff;
+    transition: all 0.2s ease-in-out 0.1s;
 }
 
 /*Форма заявки на услугу*/
 .form {
-    align-items: center;
     display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
 }
 
-.form__body {
-    display: flex;
 
-}
 
 /**/
 form {
-    display: flex;
-    flex-direction: column;
     max-width: 600px;
     border: 2px solid #000;
     padding: 40px;
     margin: 50px;
+    border-radius: 10px;
 }
 
 input {
     font-size: 30px;
     padding: 10px;
-    margin: 0 40px;
+    margin: 25px 40px;
 
+
+}
+
+input:focus {
+    outline: invert;
+}
+
+.form1__title {
+    text-align: center;
+    font-size: 36px;
+    align-items: center;
+}
+
+button {
+    font-size: 20px;
 }
 
 /**/
-.how__we-works {
-    background: url('../img/how__work.jpg') center no-repeat;
-    padding: 200px;
-
-}
-
-.wr {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
 
 
 
-.form__btn {}
 
 /**/
 footer {
@@ -333,14 +370,26 @@ footer {
         max-width: 1200px;
     }
 
-    .menu {
-        display: none;
-    }
 
     .form__body {
         display: flex;
         flex-direction: column;
     }
+
+    .btn {
+        background-color: orange;
+    }
+
+    .full__screen-body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+
+
+
 }
 
 @media screen and(max-width:1200px) {
@@ -352,6 +401,15 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
+    .menu {
+        display: none;
+    }
+
+    .item__menu {
+        font-size: 26px;
+    }
+
 }
 
 @media screen and(max-width:976px) {
@@ -364,18 +422,96 @@ footer {
     .container {
         max-width: 467px;
     }
-}
 
-@media screen and (min-width:425) {
-    .container {
-        max-width: 467px;
+    .body__title {
+        font-size: 46px;
+    }
+
+    .call__back {
+        font-size: 20px;
+    }
+
+    .header__title {
+        margin-bottom: 20px;
+    }
+
+    .header__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        max-width: 400px;
+        border: 2px solid #000;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    input {
+        font-size: 16px;
+        padding: 0px;
+
+    }
+
+    .form1__title {
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+
+    .form__title {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .advantages__top,
+    .advantages__bottom {
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .block__info {
+        margin: 30px 10px;
+    }
+
+    .form2__title {
+        margin: 20px 20px;
     }
 }
+
 
 @media screen and(max-width:467px) {
     .container {
         max-width: none;
         margin: 0 auto;
+    }
+
+
+
+
+
+    .advantages__title {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .block__info:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+
+
+    .advantages__top:first-child {
+        padding: 20px;
     }
 }
 
