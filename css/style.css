@@ -368,6 +368,8 @@ span {
   padding: 100px;
   margin-bottom: 100px;
   width: 100vh;
+  margin: 0 auto;
+  height: auto;
 }
 
 .about__body {
