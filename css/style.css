@@ -208,36 +208,6 @@ span {
   text-align: center;
 }
 
-.call__back {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  height: 60px;
-  border: 2px solid orange;
-  padding: 10px;
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: orange;
-}
-
-.call__back a {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  color: #000;
-}
-
-.call__back {
-  color: #fff;
-}
-
 /*Изменения цвета при наведении*/
 .btn:hover {
   background: orange;
@@ -271,36 +241,60 @@ span {
   margin-bottom: 100px;
 }
 
-.full__screen {
-  background: url("../img/fulbg.jpg") no-repeat center center;
+.page__fullscreen {
+  background: url("../img/fulbg.png") no-repeat;
   background-size: cover;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
-  padding: 20px 0;
-  max-width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 150px;
 }
 
 .full__screen-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  max-width: 1000px;
-  margin: 0 auto;
+}
+
+.body__btn {
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 2px solid orange;
+  padding: 10px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: orange;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  padding: 40px 0;
+}
+
+.body__btn a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000;
 }
 
 /*Тело всей шапки*/
@@ -351,21 +345,14 @@ span {
   border-radius: 10px;
 }
 
-/*Кнопка в шарке*/
 /*Начальная страница*/
-.full__screen {
-  width: 100%;
-  height: auto;
-  padding: 200px;
-  margin-bottom: 100px;
-}
-
 /*Тело main*/
 .body__title {
   font-size: 64px;
   margin-bottom: 25px;
   color: #fff;
   max-width: 800px;
+  text-align: center;
 }
 
 .body__text {
@@ -374,11 +361,29 @@ span {
   color: #fff;
 }
 
-.body__btn {
-  max-width: 400px;
+/*О компании*/
+.about__company {
+  background: url("../img/34324324.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 100px;
+  margin-bottom: 100px;
+  width: 100vh;
 }
 
-/*заявка*/
+.about__body {
+  background-color: rgba(128, 128, 128, 0.508);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.about__title {
+  color: #fff;
+}
+
+.about__list-item {
+  color: #fff;
+}
+
 /*Примущества*/
 .advantages {
   margin-bottom: 100px;
@@ -391,6 +396,10 @@ span {
 
 strong {
   font-weight: 900;
+}
+
+.about__list {
+  text-align: center;
 }
 
 .about__list-item {
@@ -439,21 +448,6 @@ strong {
 
 /**/
 .block__info {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 2px solid #000;
-  margin: 0 40px;
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 800px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 33.3333%;
-          flex: 0 1 33.3333%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,6 +455,9 @@ strong {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: 2px solid #000;
+  margin: 20px;
+  padding: 20px;
 }
 
 .block__info:hover {
@@ -468,6 +465,14 @@ strong {
   color: #fff;
   -webkit-transition: all 0.2s ease-in-out 0.1s;
   transition: all 0.2s ease-in-out 0.1s;
+}
+
+.info__title {
+  text-align: center;
+}
+
+.ifno__text {
+  text-align: center;
 }
 
 /*Форма заявки на услугу*/
@@ -552,19 +557,6 @@ footer {
   }
   .btn {
     background-color: orange;
-  }
-  .full__screen-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    justify-items: center;
   }
 }
 
