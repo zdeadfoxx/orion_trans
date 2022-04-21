@@ -88,6 +88,48 @@ span {
 
 }
 
+/*Тело всей шапки*/
+.header__body {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+/*Меню нафвигации в шапке*/
+.menu {
+    display: flex;
+}
+
+.item__menu {
+    margin: 0 20px;
+    color: #000;
+    font-size: 16px;
+}
+
+/*Мобильное меню*/
+
+
+.burger img {
+    cursor: pointer;
+}
+
+/*При наведении на элементы меню*/
+.item__menu:hover {
+    text-decoration: underline;
+    transition: all 0.4s linear 0.2s;
+}
+
+/*Активная вкладка на сайте*/
+.active {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*Главная страница*/
 .page__fullscreen {
     background: url('../img/fulbg.png') no-repeat;
     background-size: cover;
@@ -98,17 +140,17 @@ span {
     margin-bottom: 150px;
 }
 
+/*Главный контейнер*/
 .full__screen-body {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: start;
     flex-direction: column;
-
 }
 
+/*Кнопка на главной странице*/
 .body__btn {
-
     align-self: center;
     border: 2px solid orange;
     padding: 10px;
@@ -126,49 +168,6 @@ span {
     color: #000;
 }
 
-/*Тело всей шапки*/
-.header__body {
-    display: flex;
-    margin-top: 25px;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-
-.border {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 15px;
-    margin-bottom: 50px;
-}
-
-/*Меню нафвигации в шапке*/
-.menu {
-    display: flex;
-}
-
-.item__menu {
-    margin: 0 20px;
-    color: #000;
-    font-size: 16px;
-}
-
-/*При наведении на элементы меню*/
-.item__menu:hover {
-    text-decoration: underline;
-    transition: all 0.4s linear 0.2s;
-}
-
-/*Активная вкладка на сайте*/
-.active {
-    background-color: orange;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-
-/*Начальная страница*/
-
-
 /*Тело main*/
 .body__title {
     font-size: 64px;
@@ -178,11 +177,7 @@ span {
     text-align: center;
 }
 
-.body__text {
-    line-height: 1.5;
-    margin: 100px 0;
-    color: #fff;
-}
+
 
 
 /*О компании*/
@@ -190,20 +185,16 @@ span {
     background: url('../img/34324324.jpg') no-repeat center center;
     background-size: cover;
     padding: 100px;
-    margin-bottom: 100px;
     width: 100vh;
     margin: 0 auto;
     height: auto;
+
 }
 
 .about__body {
     background-color: rgba(128, 128, 128, 0.508);
     padding: 15px;
     border-radius: 10px;
-
-
-
-
 }
 
 .about__title {
@@ -216,7 +207,7 @@ span {
 
 /*Примущества*/
 .advantages {
-    margin-bottom: 100px;
+    margin-top: 100px;
     background: url('../') 0 0 no-repeat;
 }
 
@@ -229,6 +220,7 @@ strong {
     font-weight: 900;
 }
 
+/*Стили для списка*/
 .about__list {
     text-align: center;
 }
@@ -267,7 +259,7 @@ strong {
     text-align: center;
 }
 
-/**/
+/*Карточки примуществ*/
 .block__info {
     display: flex;
     flex-direction: column;
@@ -303,7 +295,7 @@ strong {
 
 
 
-/**/
+/*Форма заявок*/
 form {
     max-width: 600px;
     border: 2px solid #000;
@@ -334,12 +326,13 @@ button {
     font-size: 20px;
 }
 
-/**/
+.burger img {
+    display: none;
+    margin: 20px;
 
+}
 
-
-
-/**/
+/*Подвал*/
 footer {
     background-color: gray;
     padding: 100px;
@@ -352,7 +345,7 @@ footer {
         max-width: 1600px;
     }
 
-    .burger {
+    .burger img {
         display: none;
     }
 }
@@ -372,6 +365,13 @@ footer {
         background-color: orange;
     }
 
+    .menu {
+        display: none;
+    }
+
+    .burger img {
+        display: block;
+    }
 
 
 
@@ -395,6 +395,10 @@ footer {
         font-size: 26px;
     }
 
+    .header__body {
+        margin: 0 20px;
+        padding: 10px;
+    }
 }
 
 @media screen and(max-width:976px) {
@@ -480,8 +484,22 @@ footer {
     }
 
 
+    .about__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 20px;
+    }
 
+    .about__company {
+        margin-right: 50px;
+    }
 
+    .about__list {
+        margin-right: 20px;
+        padding: 15px;
+    }
 
     .advantages__title {
         font-size: 36px;
@@ -500,15 +518,7 @@ footer {
     }
 }
 
-.burger {
-    margin: 20px;
-}
 
-.burger__item {
-    width: 100px;
-    height: 20px;
-    background-color: #000;
-}
 
 /**/
 /**/
