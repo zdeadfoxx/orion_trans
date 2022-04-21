@@ -1,0 +1,39 @@
+/*Стили для страницы application.html */
+/*Для логотипа */
+.from__link {
+    color: #000;
+}
+
+/*Для формы*/
+.input__from {
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+.page {
+    background-color: #FF9C70;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #FF9C70;
+    border: 2px solid #FF9C70;
+    padding: 20px;
+    color: #fff;
+    border-radius: 50px;
+}
+
