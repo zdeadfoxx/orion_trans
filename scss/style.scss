@@ -193,6 +193,7 @@ span {
     width: 100vh;
     margin: 0 auto;
     height: auto;
+    margin-bottom: 50px;
 
 }
 
@@ -235,6 +236,10 @@ strong {
 }
 
 /*Карточки с примуществами*/
+.advantages {
+    margin-bottom: 50px;
+}
+
 .advantages__body {
     display: flex;
     justify-content: center;
@@ -351,7 +356,79 @@ button {
     background-color: #E9EFF8;
 }
 
-.form {}
+
+/*Как мы работаем*/
+.how__we--work {
+    background: url('../img/work.png') 0 0 no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.work__title {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.work {
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top {
+        display: flex;
+
+    }
+
+    &__list--number {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        color: #fff;
+    }
+
+    &__bottom {
+        display: flex;
+
+    }
+
+    &__list--text {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.number,
+.text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work__item {}
+
+.work__top,
+.work__bottom {
+    display: flex;
+    margin: 40px 0px;
+}
+
+.work__content {
+    display: flex;
+    justify-content: space-between;
+}
 
 /*Подвал*/
 footer {
