@@ -366,6 +366,10 @@ span {
   text-align: center;
 }
 
+.body__btn a {
+  color: #fff;
+}
+
 /*О компании*/
 .about__company {
   background: url("../img/34324324.jpg") no-repeat center center;
@@ -572,41 +576,35 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
 }
 
 .work__title {
   color: #fff;
-  margin-bottom: 25px;
 }
 
-.work__body {
+.work__list-1 p {
+  color: #fff;
+  text-align: center;
+}
+
+.work__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.work__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
+.work__bottom,
 .work__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 40px 0;
 }
 
-.work__list--number {
+.work__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -615,44 +613,21 @@ button {
           justify-content: space-between;
 }
 
-.work__item {
-  color: #fff;
-}
-
-.work__bottom {
+.work__list-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.work__list--text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.number,
-.text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.work__top,
-.work__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 40px 0px;
-}
-
-.work__content {
+.work__body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

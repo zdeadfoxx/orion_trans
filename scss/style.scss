@@ -182,6 +182,9 @@ span {
     text-align: center;
 }
 
+.body__btn a {
+    color: #fff;
+}
 
 
 
@@ -365,67 +368,45 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 
 }
 
 .work__title {
     color: #fff;
-    margin-bottom: 25px;
 }
 
-.work {
+.work__list-1 p {
+    color: #fff;
+    text-align: center;
 
-    &__body {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__top {
-        display: flex;
-
-    }
-
-    &__list--number {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__item {
-        color: #fff;
-    }
-
-    &__bottom {
-        display: flex;
-
-    }
-
-    &__list--text {
-        display: flex;
-        justify-content: space-between;
-    }
 }
 
-.number,
-.text {
+.work__bottom {
     display: flex;
     justify-content: space-between;
 }
 
-.work__item {}
-
-.work__top,
-.work__bottom {
+.work__bottom,
+.work__top {
     display: flex;
-    margin: 40px 0px;
+    margin: 40px 0;
 }
 
-.work__content {
+.work__list {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.work__list-1 {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.work__body {
+    flex-direction: column;
     display: flex;
     justify-content: space-between;
 }
@@ -434,6 +415,7 @@ button {
 footer {
     background-color: gray;
     padding: 100px;
+
 }
 
 /*burger menu*/
