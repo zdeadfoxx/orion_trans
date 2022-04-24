@@ -214,11 +214,6 @@ span {
     color: #fff;
 }
 
-/*Примущества*/
-.advantages {
-    margin-top: 100px;
-    background: url('../') 0 0 no-repeat;
-}
 
 .about__title {
 
@@ -256,14 +251,6 @@ strong {
     margin: 50px;
 }
 
-.advantages__title {
-    text-align: center;
-
-}
-
-.info__title {
-    margin-bottom: 25px;
-}
 
 .advantages__title {
     font-size: 64px;
@@ -279,7 +266,7 @@ strong {
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-
+    cursor: pointer;
 }
 
 .block__info:hover {
@@ -290,55 +277,38 @@ strong {
 
 .info__title {
     text-align: center;
+    margin-bottom: 25px;
 }
 
 .ifno__text {
     text-align: center;
 }
 
-/*Форма заявки на услугу*/
+
+
+/*Форма заявок*/
+
 .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
-
-}
-
-
-
-/*Форма заявок*/
-form {
-    max-width: 600px;
-}
-
-input {
-    font-size: 30px;
-    padding: 15px;
-    margin: 25px 40px;
-    border: 2px solid #000;
-}
-
-.form1__title {
-    text-align: center;
-    font-size: 36px;
-    align-items: center;
-}
-
-button {
-    font-size: 20px;
-}
-
-.burger img {
-    display: none;
-    margin: 20px;
-
 }
 
 form {
     background-color: #fff;
     border-radius: 10px;
+    display: flex;
+    padding: 20px;
+}
+
+.input__from {
+    font-size: 20px;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 20px;
 }
 
 button {
@@ -346,6 +316,7 @@ button {
     padding: 20px;
     color: #fff;
     border-radius: 25px;
+    font-size: 20px;
 }
 
 .from__btn:hover {
@@ -364,12 +335,12 @@ button {
 .how__we--work {
     background: url('../img/work.png') 0 0 no-repeat;
     background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    min-height: 500px;
+    background-position: center;
+    margin-bottom: 100px;
 }
+
+
 
 .work__title {
     color: #fff;
@@ -392,17 +363,15 @@ button {
     margin: 40px 0;
 }
 
-.work__list {
-    display: flex;
-    justify-content: space-between;
-
-}
-
 .work__list-1 {
     display: flex;
-    text-align: center;
     justify-content: space-between;
+    text-align: center;
+}
 
+.work__list {
+    display: flex;
+    text-align: center;
 }
 
 .work__body {
@@ -411,11 +380,59 @@ button {
     justify-content: space-between;
 }
 
+
 /*Подвал*/
 footer {
     background-color: gray;
     padding: 100px;
 
+}
+
+/*Карта и контакты*/
+
+.map__and-contact {
+    display: flex;
+    width: 100vh;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+/*Карта*/
+.map__yandex {
+    width: 960px;
+    height: 450px;
+}
+
+.body__box {
+    display: flex;
+    width: 100%;
+}
+
+/*Контакты*/
+.contact {
+    width: 960px;
+    padding-left: 10px;
+}
+
+
+.contacnt__body {
+    width: 960px;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+}
+
+.contact__title {
+    font-size: 64px;
+    margin-bottom: 25px;
+    color: #000;
+    text-align: start;
+}
+
+.contact__item {
+    margin: 20px 0;
+    color: #000;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 2px;
 }
 
 /*burger menu*/
@@ -479,11 +496,37 @@ footer {
         margin: 0 20px;
         padding: 10px;
     }
+
+    /*Карта*/
+    .map__yandex {}
+
+    .body__box {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contact__list {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+    .contact__item {
+        margin: 0 10px;
+    }
+
 }
 
 @media screen and(max-width:976px) {
     .container {
         max-width: 767px;
+    }
+
+    .form2__title {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
 
@@ -493,7 +536,8 @@ footer {
     }
 
     .body__title {
-        font-size: 46px;
+        font-size: 26px;
+        max-width: 400px;
     }
 
     .call__back {
@@ -520,21 +564,6 @@ footer {
         flex-direction: column;
     }
 
-    input {
-        font-size: 16px;
-        padding: 0px;
-
-    }
-
-    .form1__title {
-        margin-bottom: 10px;
-        font-size: 26px;
-    }
-
-    .form__title {
-        font-size: 36px;
-        font-weight: 600;
-    }
 
     .advantages__top,
     .advantages__bottom {
@@ -545,13 +574,13 @@ footer {
         margin: 20px;
     }
 
-    .block__info {
-        margin: 30px 10px;
-    }
 
     .form2__title {
-        margin: 20px 20px;
+        text-align: center;
+        align-items: center;
     }
+
+
 }
 
 
@@ -570,9 +599,7 @@ footer {
         padding-right: 20px;
     }
 
-    .about__company {
-        margin-right: 50px;
-    }
+
 
     .about__list {
         margin-right: 20px;
@@ -590,15 +617,65 @@ footer {
     }
 
 
+    form {
+        padding: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+    }
 
     .advantages__top:first-child {
         padding: 20px;
     }
 
+    .about__company {
+        max-width: 350px;
+        padding: 10px;
 
+    }
+
+    .about__body {
+        max-width: 300px;
+    }
+
+    form {
+        margin: 0 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .form2__title {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 16px;
+        align-items: center;
+
+    }
+
+    .form1__title {
+        margin-bottom: 20px;
+    }
 }
 
+@media screen and(max-width:467px) {
+    .container {
+        max-width: none;
+        margin: 0 auto;
+    }
 
+    .form2__title {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 16px;
+        align-items: center;
+        max-width: 300px;
+    }
+
+}
 
 /**/
 /**/

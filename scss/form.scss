@@ -11,24 +11,23 @@
 }
 
 .header {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .page {
     background-color: #FF9C70;
     background-size: cover;
     height: 100vh;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    flex: 1 1 auto;
+
 }
 
-.form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    padding: 50px;
+.footer_app {
+    margin-top: 100px;
+}
 
+.form1__title {
+    margin-bottom: 20px;
 }
 
 button {
@@ -37,4 +36,13 @@ button {
     padding: 20px;
     color: #fff;
     border-radius: 50px;
+}
+
+.form1__title {
+    text-align: center;
+    font-size: 16px;
+}
+
+.form__title {
+    font-size: 24px;
 }
