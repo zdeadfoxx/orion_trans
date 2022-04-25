@@ -287,49 +287,41 @@ strong {
 
 
 /*Форма заявок*/
-
-.form {
+.form__callback {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 
-form {
-    background-color: #fff;
-    border-radius: 10px;
-    display: flex;
-    padding: 20px;
+.callback__title {
+    font-size: 64px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
 }
 
-.input__from {
-    font-size: 20px;
+.from__text,
+.from__phone {
     border: 2px solid #000;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 0 20px;
-}
-
-button {
-    background-color: #FF9C70;
     padding: 20px;
-    color: #fff;
-    border-radius: 25px;
-    font-size: 20px;
-}
-
-.from__btn:hover {
-    background: rgb(255, 166, 0);
-    opacity: 0.8;
-    transition: all 0.4s ease-in-out 0.1s;
-}
-
-.input__from {
+    font-size: 26px;
+    margin: 0 40px;
     border-radius: 10px;
-    background-color: #E9EFF8;
 }
 
+.form__btn {
+    padding: 20px;
+    font-size: 20px;
+    background-color: #eecfba79;
+    border-radius: 10px;
+}
+
+.form__btn:hover {
+    background-color: #EECFBA;
+
+}
 
 /*Как мы работаем*/
 .how__we--work {
@@ -338,6 +330,7 @@ button {
     min-height: 500px;
     background-position: center;
     margin-bottom: 100px;
+    padding: 50px;
 }
 
 
@@ -346,15 +339,13 @@ button {
     color: #fff;
 }
 
-.work__list-1 p {
-    color: #fff;
+
+
+.work__item {
     text-align: center;
-
-}
-
-.work__bottom {
-    display: flex;
-    justify-content: space-between;
+    color: #fff;
+    margin-bottom: 150px;
+    font-size: 34px;
 }
 
 .work__bottom,
@@ -363,23 +354,105 @@ button {
     margin: 40px 0;
 }
 
-.work__list-1 {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+.work__item {
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
-.work__list {
-    display: flex;
-    text-align: center;
+.work__item:nth-child(1)::before {
+    content: ("1.");
+}
+
+.work__item:nth-child(2)::before {
+    content: ("2.");
+}
+
+.work__item:nth-child(3)::before {
+    content: ("3.");
+}
+
+.work__item:nth-child(4)::before {
+    content: ("4.");
+}
+
+
+.work__item:nth-child(2)::after {
+    content: url("../img/call.png");
+    position: absolute;
+    top: 100%;
+    left: 43%;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.work__item:nth-child(3)::after {
+    content: url("../img/dogovor.png");
+    position: absolute;
+    top: 100%;
+    left: 43%;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.work__item:nth-child(4):after {
+    content: url("../img/icon.png");
+    position: absolute;
+    top: 100%;
+    left: 43%;
+    cursor: pointer;
+    padding: 20px;
+}
+
+
+.work__item:nth-child(1):after {
+    content: url("../img/form.svg");
+    position: absolute;
+    top: 100%;
+    left: 43%;
+    cursor: pointer;
+    padding: 20px;
+
+}
+
+
+.work__item:nth-child(2)::after {
+    content: url("../img/call.png");
+    position: absolute;
+    top: 100%;
+    left: 43%;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.work__item:nth-child(3)::after {
+    content: url("../img/dogovor.png");
+    position: absolute;
+    top: 100%;
+    left: 43%;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.work__item:nth-child(4):after {
+    content: url("../img/icon.png");
+    position: absolute;
+    top: 100%;
+    left: 43%;
+    cursor: pointer;
+    padding: 20px;
 }
 
 .work__body {
-    flex-direction: column;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+.work__item:hover {
+    text-decoration: underline;
+}
 
 /*Подвал*/
 footer {
@@ -435,16 +508,22 @@ footer {
     letter-spacing: 2px;
 }
 
+
 /*burger menu*/
+
+.burger__img img {
+    display: none;
+}
+
+
+
 /*For pc*/
 @media screen and(max-width:1920px) {
     .container {
         max-width: 1600px;
     }
 
-    .burger img {
-        display: none;
-    }
+
 }
 
 @media screen and(max-width:1600px) {
@@ -470,7 +549,10 @@ footer {
         display: block;
     }
 
-
+    .header__body {
+        display: flex;
+        justify-content: space-around;
+    }
 
 }
 
@@ -580,6 +662,47 @@ footer {
         align-items: center;
     }
 
+    //@at-root
+
+    .work__item:nth-child(1):after {
+        content: url("../img/form.svg");
+        position: absolute;
+        top: 100%;
+        left: 32%;
+        cursor: pointer;
+        padding: 20px;
+
+    }
+
+    .work__item:nth-child(2)::after {
+        content: url("../img/call.png");
+        position: absolute;
+        top: 100%;
+        left: 32%;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .work__item:nth-child(3)::after {
+        content: url("../img/dogovor.png");
+        position: absolute;
+        top: 100%;
+        left: 32%;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .work__item:nth-child(4):after {
+        content: url("../img/icon.png");
+        position: absolute;
+        top: 100%;
+        left: 32%;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+
+
 
 }
 
@@ -659,6 +782,55 @@ footer {
     .form1__title {
         margin-bottom: 20px;
     }
+
+    .work__item {
+        text-align: center;
+    }
+
+    .work__title {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    //@at-root
+
+    .work__item:nth-child(1):after {
+        content: url("../img/form.svg");
+        position: absolute;
+        top: 100%;
+        left: 28%;
+        cursor: pointer;
+        padding: 20px;
+
+    }
+
+    .work__item:nth-child(2)::after {
+        content: url("../img/call.png");
+        position: absolute;
+        top: 100%;
+        left: 25%;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .work__item:nth-child(3)::after {
+        content: url("../img/dogovor.png");
+        position: absolute;
+        top: 100%;
+        left: 28%;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .work__item:nth-child(4):after {
+        content: url("../img/icon.png");
+        position: absolute;
+        top: 100%;
+        left: 28%;
+        cursor: pointer;
+        padding: 20px;
+    }
+
 }
 
 @media screen and(max-width:467px) {

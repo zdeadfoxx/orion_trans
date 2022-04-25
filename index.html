@@ -33,15 +33,9 @@
                         </ul>
                     </nav>
                     <div class="burger">
-                        <span class="burger__item">
-
-                        </span>
-                        <span class="burger__item">
-
-                        </span>
-                        <span class="burger__item">
-
-                        </span>
+                        <div class="burger__img">
+                            <img src="img/burgder1.jpg" alt="burgeer">
+                        </div>
                     </div>
                     <!-- Кнопка для обратной связи -->
                     <span class="btn">
@@ -91,20 +85,19 @@
                         <div class="work__body">
                             <div class="work__bottom">
                                 <div class="work__list">
-                                    <p class="work__item">Вы оставляете заявку на сайте</p>
-                                    <p class="work__item">Наш менеджер свяжется с вами
+                                    <p class="work__item">
+                                        Вы оставляете заявку на сайте
+                                    </p>
+                                    <p class="work__item">
+                                        Наш менеджер свяжется с вами
                                         и обсудит условия и тарифы доставки
                                     </p>
-                                    <p class="work__item">Мы заключаем договор</p>
-                                    <p class="work__item">Выполняем доставку транспортного средства</p>
-                                </div>
-                            </div>
-                            <div class="work__top">
-                                <div class="work__list-1">
-                                    <p class="work__item">заключаем</p>
-                                    <p class="work__item">заключаем</p>
-                                    <p class="work__item">заключаем</p>
-                                    <p class="work__item">заключаем</p>
+                                    <p class="work__item">
+                                        Мы заключаем договор
+                                    </p>
+                                    <p class="work__item">
+                                        Выполняем доставку транспортного средства
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -165,9 +158,6 @@
                 <section class="map__and-contact">
                     <div class="body__box">
                         <div class="map__body">
-                            <!-- <iframe class="map__yandex"
-                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A0750aa9a4d7afd21c50ed6d39de4f4582184c51dbda79774ea4f010f8c482f4b&amp;source=constructor"
-                                frameborder="0"></iframe> -->
                             <iframe class="map__yandex"
                                 src="https://yandex.ru/map-widget/v1/?um=constructor%3A75eea21ebbb7818b2e92c15addc129c5207bf9a8bd89914305005e68c17e22be&amp;source=constructor"
                                 width="500" height="400" frameborder="0"></iframe>
@@ -178,7 +168,8 @@
                                 <ul class="contact__list">
                                     <li class="contact__item"><strong>Телефон</strong>: +7(913)265-72-23</li>
                                     <li class="contact__item"><strong>Email</strong>: oriontrans@mail.ru</li>
-                                    <li class="contact__item"> <strong>Адрес</strong>:630056, Новосибирская область, г.о. Город Новосибирск, г
+                                    <li class="contact__item"> <strong>Адрес</strong>:630056, Новосибирская область,
+                                        г.о. Город Новосибирск, г
                                         Новосибирск, улСофийская, д. 2А/1,
                                         офис 3</li>
                                     <li class="contact__item">
@@ -191,7 +182,7 @@
                 </section>
                 <!-- Форма заявки -->
 
-                <div class="form">
+                <!-- <div class="form">
                     <div class="want__ask--questions">
                         <a href="#" id="questions" class=""></a>
                         <div class="questions__body">
@@ -205,7 +196,17 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> -->
+                <section class="form__callback">
+                    <h2 class="callback__title">Оставьте данные и мы вам перезвоним</h2>
+                    <form action="" method="post">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" class="from__text" name="name" placeholder="Имя">
+                        <label for="phone">Ваш телефон:</label>
+                        <input type="tel" class="from__phone" name="phone" placeholder="Телефон" required>
+                        <button type="submit" class="form__btn">Отправить заявку</button>
+                    </form>
+                </section>
 
 
             </div>
