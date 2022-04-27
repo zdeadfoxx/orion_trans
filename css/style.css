@@ -713,9 +713,15 @@ footer {
   letter-spacing: 2px;
 }
 
+.input__from:required {
+  content: '*';
+}
+
 /*burger menu*/
 .burger__img img {
-  display: none;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
 }
 
 /*For pc*/

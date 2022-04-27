@@ -1,50 +1,103 @@
 @charset "UTF-8";
 /*Стили для страницы application.html */
 /*Для логотипа */
-.from__link {
+.from {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.application__title {
+  font-size: 64px;
+  text-align: center;
   color: #000;
-}
-
-/*Для формы*/
-.input__from {
-  border: 2px solid #000;
-  border-radius: 10px;
-}
-
-.header {
-  margin-bottom: 25px;
-}
-
-.page {
-  background-color: #FF9C70;
-  background-size: cover;
-  height: 100vh;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
-.footer_app {
-  margin-top: 100px;
-}
-
-.form1__title {
   margin-bottom: 20px;
 }
 
-button {
-  background-color: #FF9C70;
-  border: 2px solid #FF9C70;
+.application__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid orange;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.application__btn {
   padding: 20px;
-  color: #fff;
-  border-radius: 50px;
+  font-size: 20px;
+  background-color: #eecfba79;
+  border-radius: 10px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  margin-bottom: 25px;
 }
 
-.form1__title {
-  text-align: center;
-  font-size: 16px;
+.application__btn:hover {
+  background-color: #eecfba;
 }
 
-.form__title {
-  font-size: 24px;
+label {
+  font-size: 30px;
+}
+
+.text__info-title {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  padding: 40px;
+  max-width: 400px;
+  max-height: 400px;
+  margin-bottom: 40px;
+  border: 2px solid #000;
+}
+
+select {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 20px;
+  margin-left: 0;
+  font-size: 30px;
+}
+
+.input__form {
+  border: 2px solid #000;
+  padding: 20px;
+  font-size: 26px;
+  margin: 40px 0px;
+  border-radius: 10px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.form__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkbox__text {
+  font-size: 26px;
+}
+
+.checkbox {
+  padding: 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
 }

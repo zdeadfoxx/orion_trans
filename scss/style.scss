@@ -508,13 +508,17 @@ footer {
     letter-spacing: 2px;
 }
 
-
-/*burger menu*/
-
-.burger__img img {
-    display: none;
+.input__from:required {
+    content: '*';
 }
 
+
+/*burger menu*/
+.burger__img img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
 
 
 /*For pc*/

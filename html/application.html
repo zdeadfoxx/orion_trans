@@ -20,13 +20,13 @@
             <div class="container">
                 <div class="header__body">
                     <!-- Логотип сайта -->
-                    <div class="header__title">
-                        <a class="from__link" href="../index.html">Орион Транс</a>
+                    <div class="burger__img">
+                        <img src="../img/burgder1.jpg" alt="burgeer">
                     </div>
                     <!-- Меню в шапке -->
                     <nav class="header__menu">
                         <ul class="menu">
-                            <li><a href="#about__company" class="item__menu active">О компании</a></li>
+                            <li><a href="../index.html" class="item__menu active">О компании</a></li>
                             <li><a href="" class="item__menu">Преимущества</a></li>
                             <li><a href="#questions" class="item__menu">Вопросы </a></li>
                             <li><a href="" class="item__menu">Контакты </a></li>
@@ -56,25 +56,50 @@
         <main class="page">
             <div class="container">
                 <!-- Форма заявки -->
-                <div class="form__page">
-                    <div class="form" class="form__">
-                        <h2 class="form__title title">Оставить нам заявку</h2>
-                        <div class="form__body">
-                            <h2 id="form1" class="form1__title">Заявка на заказ</h2>
-                            <form action="" class="form1">
-                                <input class="input__from" type="text" placeholder="Город отправления" required>
-                                <input class="input__from" type="text" placeholder="Город назначения" required>
-                                <input class="input__from" type="text" placeholder="Авто">
-                                <input class="input__from" type="text" placeholder="Имя">
-                                <input class="input__from" type="phone" placeholder="Телефон" required>
-                                <input class="input__from" type="email" placeholder="Почта" required>
+                <section class="from__application">
+                    <h2 class="application__title">Оставить заявку</h2>
+                    <form action="" class="application__form">
+                        <label for="first__city">Укажите город отправления:</label>
+                        <input type="text" class="input__form" placeholder="Город отправления" name="first__city"
+                            required>
 
-                                <button type="submit" class=" from__btn">Отправить</button>
-                            </form>
+                        <label for="Second__city">Укажите город назначения:</label>
+                        <input type="text" class="input__form" placeholder="Город назначения" name="Second__city"
+                            required>
+                        <!--  -->
+                        <label for="car">Выберите машину:</label>
+
+                        <select name="car" id="">
+                            <option value="">Название машины</option>
+                        </select>
+                        <!--  -->
+                        <label for="name">Укажите ваше имя:</label>
+                        <input type="text" class="input__form" placeholder="Имя" name="name" required>
+
+                        <label for="phone">Укажите ваш телефон:</label>
+                        <input type="tel" class="input__form" placeholder="+7" name="phone" required>
+
+                        <label for="email">Укажите вашу электроную почту:</label>
+                        <input type="email" class="input__form" placeholder="Электроная почта" name="email">
+
+                        <label for="text__info" class="text__info-title">Введите ваши пожелания:</label>
+                        <textarea name="text__info" class="" autofocus wrap>
+
+                          </textarea>
+                        <button class="application__btn" type="submit">
+                            Отправить
+                        </button>
+
+                        <div class="form__text">
+                            <input type="checkbox" class="checkbox" required>
+                            <p class="checkbox__text">
+                                Нажимая кнопку "Отправить", я принимаю условия соглашения на обработку персональных
+                                данных
+                            </p>
                         </div>
+                    </form>
 
-                    </div>
-                </div>
+                </section>
             </div>
         </main>
         <footer class="footer" class="footer_app">

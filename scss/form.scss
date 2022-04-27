@@ -1,48 +1,105 @@
 /*Стили для страницы application.html */
 /*Для логотипа */
-.from__link {
-    color: #000;
+
+.from {
+    display: flex;
+    flex-direction: column;
+    // .from__application
+
+    &__application {}
 }
 
-/*Для формы*/
-.input__from {
-    border: 2px solid #000;
-    border-radius: 10px;
+.application {
+
+    // .application__title
+
+    &__title {
+        font-size: 64px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 20px;
+    }
+
+
+
+    // .application__form
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid orange;
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    // .application__btn
+
+    &__btn {
+        padding: 20px;
+        font-size: 20px;
+        background-color: #eecfba79;
+        border-radius: 10px;
+        align-self: start;
+        margin-bottom: 25px;
+
+        &:hover {
+            background-color: #eecfba;
+        }
+    }
+
+
 }
 
-.header {
-    margin-bottom: 25px;
+label {
+    font-size: 30px;
 }
 
-.page {
-    background-color: #FF9C70;
-    background-size: cover;
-    height: 100vh;
-    flex: 1 1 auto;
-
-}
-
-.footer_app {
-    margin-top: 100px;
-}
-
-.form1__title {
+.text__info-title {
+    font-size: 23px;
     margin-bottom: 20px;
 }
 
-button {
-    background-color: #FF9C70;
-    border: 2px solid #FF9C70;
+textarea {
+    align-self: start;
+    padding: 40px;
+    max-width: 400px;
+    max-height: 400px;
+    margin-bottom: 40px;
+    border: 2px solid #000;
+}
+
+select {
+    align-self: flex-start;
     padding: 20px;
-    color: #fff;
-    border-radius: 50px;
+    margin-left: 0;
+    font-size: 30px;
 }
 
-.form1__title {
-    text-align: center;
-    font-size: 16px;
+.input {
+
+    // .input__form
+
+    &__form {
+        border: 2px solid #000;
+        padding: 20px;
+        font-size: 26px;
+        margin: 40px 0px;
+        border-radius: 10px;
+        align-self: start;
+    }
 }
 
-.form__title {
-    font-size: 24px;
+.form__text {
+    display: flex;
+}
+
+.checkbox__text {
+    font-size: 26px;
+}
+
+.checkbox {
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
 }
