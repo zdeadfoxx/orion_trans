@@ -97,9 +97,7 @@ span {
     text-align: center;
 }
 
-.header__title {
-    cursor: pointer;
-}
+
 
 /*Меню нафвигации в шапке*/
 .menu {
@@ -208,17 +206,13 @@ span {
 
 .about__title {
     color: #fff;
+    text-align: center;
 }
 
 .about__list-item {
     color: #fff;
 }
 
-
-.about__title {
-
-    text-align: center;
-}
 
 strong {
     font-weight: 900;
@@ -458,7 +452,6 @@ strong {
 footer {
     background-color: gray;
     padding: 100px;
-
 }
 
 /*Карта и контакты*/
@@ -508,10 +501,6 @@ footer {
     letter-spacing: 2px;
 }
 
-.input__from:required {
-    content: '*';
-}
-
 
 /*burger menu*/
 .burger__img img {
@@ -536,21 +525,9 @@ footer {
     }
 
 
-    .form__body {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .btn {
-        background-color: orange;
-    }
 
     .menu {
         display: none;
-    }
-
-    .burger img {
-        display: block;
     }
 
     .header__body {
@@ -565,10 +542,7 @@ footer {
         max-width: 967px;
     }
 
-    .form {
-        display: flex;
-        flex-direction: column;
-    }
+ 
 
     .menu {
         display: none;
@@ -608,7 +582,10 @@ footer {
         max-width: 767px;
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3bc39da6e46c6df094ed8890880c5edbc81988ae
 }
 
 @media screen and(max-width:767px) {
@@ -646,8 +623,11 @@ footer {
     }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 3bc39da6e46c6df094ed8890880c5edbc81988ae
     //@at-root
 
     .work__item:nth-child(1):after {
@@ -726,7 +706,10 @@ footer {
     }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3bc39da6e46c6df094ed8890880c5edbc81988ae
 
     .advantages__top:first-child {
         padding: 20px;
@@ -742,10 +725,14 @@ footer {
         max-width: 300px;
     }
 
+<<<<<<< HEAD
 
 
 
 
+=======
+  
+>>>>>>> 3bc39da6e46c6df094ed8890880c5edbc81988ae
     .work__item {
         text-align: center;
     }
@@ -796,6 +783,7 @@ footer {
 
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 767px) {
     .container {
         max-width: 467px;
@@ -813,6 +801,8 @@ footer {
 
 }
 
+=======
+>>>>>>> 3bc39da6e46c6df094ed8890880c5edbc81988ae
 /**/
 /**/
 /*For pc*/

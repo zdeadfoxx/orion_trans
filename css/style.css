@@ -256,10 +256,6 @@ span {
   text-align: center;
 }
 
-.header__title {
-  cursor: pointer;
-}
-
 /*Меню нафвигации в шапке*/
 .menu {
   display: -webkit-box;
@@ -389,14 +385,11 @@ span {
 
 .about__title {
   color: #fff;
+  text-align: center;
 }
 
 .about__list-item {
   color: #fff;
-}
-
-.about__title {
-  text-align: center;
 }
 
 strong {
@@ -713,10 +706,6 @@ footer {
   letter-spacing: 2px;
 }
 
-.input__from:required {
-  content: '*';
-}
-
 /*burger menu*/
 .burger__img img {
   width: 150px;
@@ -735,23 +724,8 @@ footer {
   .container {
     max-width: 1200px;
   }
-  .form__body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .btn {
-    background-color: orange;
-  }
   .menu {
     display: none;
-  }
-  .burger img {
-    display: block;
   }
   .header__body {
     display: -webkit-box;
@@ -765,15 +739,6 @@ footer {
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 967px;
-  }
-  .form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .menu {
     display: none;
@@ -971,6 +936,7 @@ footer {
   }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 767px) {
   .container {
     max-width: 467px;
@@ -1024,5 +990,7 @@ footer {
   }
 }
 
+=======
+>>>>>>> 3bc39da6e46c6df094ed8890880c5edbc81988ae
 /**/
 /**/
