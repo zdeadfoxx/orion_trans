@@ -584,7 +584,6 @@ footer {
     }
 
     /*Карта*/
-    .map__yandex {}
 
     .body__box {
         display: flex;
@@ -609,11 +608,7 @@ footer {
         max-width: 767px;
     }
 
-    .form2__title {
-        align-items: center;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+
 }
 
 @media screen and(max-width:767px) {
@@ -639,16 +634,6 @@ footer {
         flex-direction: column;
     }
 
-    form {
-        max-width: 400px;
-        border: 2px solid #000;
-        padding: 20px;
-        border-radius: 10px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
 
 
     .advantages__top,
@@ -661,10 +646,7 @@ footer {
     }
 
 
-    .form2__title {
-        text-align: center;
-        align-items: center;
-    }
+
 
     //@at-root
 
@@ -744,13 +726,7 @@ footer {
     }
 
 
-    form {
-        padding: 20px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        max-width: 350px;
-    }
+
 
     .advantages__top:first-child {
         padding: 20px;
@@ -766,26 +742,9 @@ footer {
         max-width: 300px;
     }
 
-    form {
-        margin: 0 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
 
-    }
 
-    .form2__title {
-        margin-bottom: 20px;
-        text-align: center;
-        font-size: 16px;
-        align-items: center;
 
-    }
-
-    .form1__title {
-        margin-bottom: 20px;
-    }
 
     .work__item {
         text-align: center;
@@ -837,23 +796,67 @@ footer {
 
 }
 
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 467px;
+    }
+
+}
+
 @media screen and(max-width:467px) {
     .container {
         max-width: none;
         margin: 0 auto;
     }
 
-    .form2__title {
-        margin-bottom: 20px;
-        text-align: center;
-        font-size: 16px;
-        align-items: center;
-        max-width: 300px;
-    }
+
 
 }
 
 /**/
 /**/
+/*For pc*/
+@media screen and (max-width: 1920px) {
+    .container {
+        max-width: 1600px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .container {
+        max-width: 1200px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 967px;
+    }
+
+}
+
+@media screen and (max-width: 976px) {
+    .container {
+        max-width: 767px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 467px;
+    }
+
+}
+
+@media screen and (max-width: 467px) {
+    .container {
+        max-width: none;
+        margin: 0 auto;
+    }
+
+}
+
 /**/
 /**/

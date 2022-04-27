@@ -56,7 +56,7 @@
         <main class="page">
             <div class="container">
                 <!-- Форма заявки -->
-                <section class="from__application">
+                <section class="from__application" id="">
                     <h2 class="application__title">Оставить заявку</h2>
                     <form action="" class="application__form">
                         <label for="first__city">Укажите город отправления:</label>
@@ -69,8 +69,10 @@
                         <!--  -->
                         <label for="car">Выберите машину:</label>
 
-                        <select name="car" id="">
-                            <option value="">Название машины</option>
+                        <select name="car" id="#form" class="list__car">
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Ford">Ford</option>
                         </select>
                         <!--  -->
                         <label for="name">Укажите ваше имя:</label>
@@ -83,20 +85,24 @@
                         <input type="email" class="input__form" placeholder="Электроная почта" name="email">
 
                         <label for="text__info" class="text__info-title">Введите ваши пожелания:</label>
-                        <textarea name="text__info" class="" autofocus wrap>
+                        <textarea name="text__info" class="">
 
                           </textarea>
                         <button class="application__btn" type="submit">
                             Отправить
                         </button>
+                        <a href="#contact__popup">
+                            <div class="form__text" id="">
 
-                        <div class="form__text">
-                            <input type="checkbox" class="checkbox" required>
-                            <p class="checkbox__text">
-                                Нажимая кнопку "Отправить", я принимаю условия соглашения на обработку персональных
-                                данных
-                            </p>
-                        </div>
+                                <input type="checkbox" class="checkbox" required>
+                                <p class="checkbox__text">
+                                    Нажимая кнопку "Отправить", я принимаю условия соглашения на обработку персональных
+                                    данных
+                                </p>
+
+                            </div>
+                        </a>
+
                     </form>
 
                 </section>
@@ -117,7 +123,27 @@
                 </div>
             </div>
         </footer>
+        <!-- Модальное окно с контактами -->
+        <section class="popup" id="contact__popup">
+            <a href="#form" class="popup__area"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#form" class="popup__close">Х</a>
+                    <h2 class="popup__title">Согласие на обработку персональных данных</h2>
+                    <div class="popup__text">
+                        Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в
+                        соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на
+                        условиях и для целей, определенных в Согласии на обработку персональных данных
+                    </div>
+                    <div class="popup__button">
+                        <a href="">Принимаю</a>
+                        <a href="">Не принимаю</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+    <script src="../scripts/popup.js"></script>
 </body>
 
 </html>
