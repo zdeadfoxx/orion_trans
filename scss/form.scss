@@ -30,6 +30,7 @@
         border: 2px solid orange;
         padding: 40px;
         border-radius: 20px;
+        margin-bottom: 50px
     }
 
     // .application__btn
@@ -91,6 +92,8 @@ select {
 
 .form__text {
     display: flex;
+    justify-content: start;
+    align-items: start;
 }
 
 .checkbox__text {
@@ -102,4 +105,327 @@ select {
     width: 20px;
     height: 20px;
     margin-right: 20px;
+}
+
+.footer {
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/*For pc*/
+@media screen and(max-width:1920px) {
+    .container {
+        max-width: 1600px;
+    }
+
+
+}
+
+@media screen and(max-width:1600px) {
+    .container {
+        max-width: 1200px;
+    }
+
+
+    .form__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        background-color: orange;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .burger img {
+        display: block;
+    }
+
+    .header__body {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and(max-width:1200px) {
+    .container {
+        max-width: 967px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .item__menu {
+        font-size: 26px;
+    }
+
+    .header__body {
+        margin: 0 20px;
+        padding: 10px;
+    }
+
+    /*Карта*/
+    .map__yandex {}
+
+    .body__box {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contact__list {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+    .contact__item {
+        margin: 0 10px;
+    }
+
+}
+
+@media screen and(max-width:976px) {
+    .container {
+        max-width: 767px;
+    }
+
+    .form2__title {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and(max-width:767px) {
+    .container {
+        max-width: 467px;
+    }
+
+    .body__title {
+        font-size: 26px;
+        max-width: 400px;
+    }
+
+    .call__back {
+        font-size: 20px;
+    }
+
+    .header__title {
+        margin-bottom: 20px;
+    }
+
+    .header__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        max-width: 400px;
+        border: 2px solid #000;
+        padding: 20px;
+        border-radius: 10px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .advantages__top,
+    .advantages__bottom {
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+    }
+
+
+    .form2__title {
+        text-align: center;
+        align-items: center;
+    }
+
+    //@at-root
+
+    .work__item:nth-child(1):after {
+        content: url("../img/form.svg");
+        position: absolute;
+        top: 100%;
+        left: 32%;
+        cursor: pointer;
+        padding: 20px;
+
+    }
+
+    .work__item:nth-child(2)::after {
+        content: url("../img/call.png");
+        position: absolute;
+        top: 100%;
+        left: 32%;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .work__item:nth-child(3)::after {
+        content: url("../img/dogovor.png");
+        position: absolute;
+        top: 100%;
+        left: 32%;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .work__item:nth-child(4):after {
+        content: url("../img/icon.png");
+        position: absolute;
+        top: 100%;
+        left: 32%;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+
+
+
+}
+
+
+@media screen and(max-width:467px) {
+    .container {
+        max-width: none;
+        margin: 0 auto;
+    }
+
+
+    .about__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 20px;
+    }
+
+
+
+    .about__list {
+        margin-right: 20px;
+        padding: 15px;
+    }
+
+    .advantages__title {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .block__info:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+
+    form {
+        padding: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+    .advantages__top:first-child {
+        padding: 20px;
+    }
+
+    .about__company {
+        max-width: 350px;
+        padding: 10px;
+
+    }
+
+    .about__body {
+        max-width: 300px;
+    }
+
+    form {
+        margin: 0 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .form2__title {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 16px;
+        align-items: center;
+
+    }
+
+    .form1__title {
+        margin-bottom: 20px;
+    }
+
+    .work__item {
+        text-align: center;
+    }
+
+    .work__title {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    //@at-root
+
+    .work__item:nth-child(1):after {
+        content: url("../img/form.svg");
+        position: absolute;
+        top: 100%;
+        left: 28%;
+        cursor: pointer;
+        padding: 20px;
+
+    }
+
+    .work__item:nth-child(2)::after {
+        content: url("../img/call.png");
+        position: absolute;
+        top: 100%;
+        left: 25%;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .work__item:nth-child(3)::after {
+        content: url("../img/dogovor.png");
+        position: absolute;
+        top: 100%;
+        left: 28%;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .work__item:nth-child(4):after {
+        content: url("../img/icon.png");
+        position: absolute;
+        top: 100%;
+        left: 28%;
+        cursor: pointer;
+        padding: 20px;
+    }
+
 }

@@ -97,9 +97,7 @@ span {
     text-align: center;
 }
 
-.header__title {
-    cursor: pointer;
-}
+
 
 /*Меню нафвигации в шапке*/
 .menu {
@@ -208,17 +206,13 @@ span {
 
 .about__title {
     color: #fff;
+    text-align: center;
 }
 
 .about__list-item {
     color: #fff;
 }
 
-
-.about__title {
-
-    text-align: center;
-}
 
 strong {
     font-weight: 900;
@@ -458,7 +452,6 @@ strong {
 footer {
     background-color: gray;
     padding: 100px;
-
 }
 
 /*Карта и контакты*/
@@ -508,10 +501,6 @@ footer {
     letter-spacing: 2px;
 }
 
-.input__from:required {
-    content: '*';
-}
-
 
 /*burger menu*/
 .burger__img img {
@@ -536,21 +525,9 @@ footer {
     }
 
 
-    .form__body {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .btn {
-        background-color: orange;
-    }
 
     .menu {
         display: none;
-    }
-
-    .burger img {
-        display: block;
     }
 
     .header__body {
@@ -565,10 +542,7 @@ footer {
         max-width: 967px;
     }
 
-    .form {
-        display: flex;
-        flex-direction: column;
-    }
+ 
 
     .menu {
         display: none;
@@ -584,7 +558,6 @@ footer {
     }
 
     /*Карта*/
-    .map__yandex {}
 
     .body__box {
         display: flex;
@@ -609,11 +582,6 @@ footer {
         max-width: 767px;
     }
 
-    .form2__title {
-        align-items: center;
-        text-align: center;
-        margin-bottom: 20px;
-    }
 }
 
 @media screen and(max-width:767px) {
@@ -639,16 +607,6 @@ footer {
         flex-direction: column;
     }
 
-    form {
-        max-width: 400px;
-        border: 2px solid #000;
-        padding: 20px;
-        border-radius: 10px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
 
 
     .advantages__top,
@@ -660,11 +618,6 @@ footer {
         margin: 20px;
     }
 
-
-    .form2__title {
-        text-align: center;
-        align-items: center;
-    }
 
     //@at-root
 
@@ -744,13 +697,6 @@ footer {
     }
 
 
-    form {
-        padding: 20px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        max-width: 350px;
-    }
 
     .advantages__top:first-child {
         padding: 20px;
@@ -766,27 +712,7 @@ footer {
         max-width: 300px;
     }
 
-    form {
-        margin: 0 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-    }
-
-    .form2__title {
-        margin-bottom: 20px;
-        text-align: center;
-        font-size: 16px;
-        align-items: center;
-
-    }
-
-    .form1__title {
-        margin-bottom: 20px;
-    }
-
+  
     .work__item {
         text-align: center;
     }
@@ -833,22 +759,6 @@ footer {
         left: 28%;
         cursor: pointer;
         padding: 20px;
-    }
-
-}
-
-@media screen and(max-width:467px) {
-    .container {
-        max-width: none;
-        margin: 0 auto;
-    }
-
-    .form2__title {
-        margin-bottom: 20px;
-        text-align: center;
-        font-size: 16px;
-        align-items: center;
-        max-width: 300px;
     }
 
 }
