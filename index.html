@@ -28,14 +28,10 @@
                             <li><a href="#about__company" class="item__menu active">О компании</a></li>
                             <li><a href="" class="item__menu">Преимущества</a></li>
                             <li><a href="#questions" class="item__menu">Вопросы </a></li>
-                            <li><a href="" class="item__menu">Контакты </a></li>
+                            <li><a href="#contact" class="item__menu">Контакты </a></li>
                             <li><a href="" class="item__menu">Как мы работаем?</a></li>
                         </ul>
                     </nav>
-                    <!-- Кнопка для обратной связи -->
-                    <span class="btn">
-                        <a href="" class="">Рассчитать стоимость</a>
-                    </span>
                 </div>
 
             </div>
@@ -150,7 +146,7 @@
                     </div>
                 </div>
                 <!-- Карта и контакты -->
-                <section class="map__and-contact">
+                <section class="map__and-contact" id="contact">
                     <div class="body__box">
                         <div class="map__body">
                             <iframe class="map__yandex"
@@ -167,9 +163,6 @@
                                         г.о. Город Новосибирск, г
                                         Новосибирск, улСофийская, д. 2А/1,
                                         офис 3</li>
-                                    <li class="contact__item">
-                                        <strong>КПП/ИНН</strong>: 540801001/5408030096
-                                    </li>
                                 </ul>
                             </section>
                         </div>
@@ -178,13 +171,19 @@
                 <!-- Форма заявки -->
                 <section class="form__callback">
                     <h2 class="callback__title">Оставьте данные и мы вам перезвоним</h2>
-                    <form action="" method="post">
+                    <form action="" method="post" class="callback">
                         <label for="name">Ваше имя:</label>
                         <input type="text" class="from__text" name="name" placeholder="Имя " required>
                         <label for="phone">Ваш телефон:</label>
                         <input type="tel" class="from__phone" name="phone" placeholder="Телефон" required>
-                        <button type="submit" class="form__btn">Отправить заявку</button>
+                        <button type="submit" class="form__btn">Закзать звонок</button>
                     </form>
+                    <section class="info__callback">
+                        <p class="info__text-callback">
+                            Оставьте свои контактные данные,мы свяжемся с вами, сможем обсудить все детали
+                            и проконсультировать по интересующему вопросу
+                        </p>
+                    </section>
                 </section>
 
 
@@ -193,7 +192,34 @@
     </main>
     <footer class="footer">
         <div class="container">
-
+            <div class="footer__info">
+                <ul class="info__list">
+                    <li class="info__item">
+                        Номер счёта: 40702810823220002625
+                    </li>
+                    <li class="info__item">
+                        Валюта: RUR
+                    </li>
+                    <li class="info__item">
+                        Название: ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ОРИОН ТРАНС"
+                    </li>
+                    <li class="info__item">
+                        ИНН: 5408030096
+                    </li>
+                    <li class="info__item">
+                        КПП: 540801001
+                    </li>
+                    <li class="info__item">
+                        Банк: ФИЛИАЛ "НОВОСИБИРСКИЙ" АО "АЛЬФА-БАНК"
+                    </li>
+                    <li class="info__item">
+                        БИК: 045004774
+                    </li>
+                    <li class="info__item">
+                        Кор. счёт: 30101810600000000774
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
     </div>

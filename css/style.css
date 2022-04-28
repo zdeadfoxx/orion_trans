@@ -480,6 +480,22 @@ strong {
 }
 
 /*Форма заявок*/
+.callback {
+  margin-bottom: 20px;
+}
+
+.info__callback {
+  max-width: 1300px;
+  border: 2px dashed #079732;
+  padding: 50px;
+}
+
+.info__text-callback {
+  font-size: 30px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
 .form__callback {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -661,7 +677,12 @@ strong {
 /*Подвал*/
 footer {
   background-color: gray;
-  padding: 100px;
+  padding: 10px;
+}
+
+.info__item {
+  font-size: 20px;
+  margin: 20px 0;
 }
 
 /*Карта и контакты*/
@@ -711,10 +732,6 @@ footer {
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 2px;
-}
-
-.input__from:required {
-  content: '*';
 }
 
 /*burger menu*/
@@ -885,6 +902,10 @@ footer {
     cursor: pointer;
     padding: 20px;
   }
+  /*Форма заявок*/
+  .callback__title {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 467px) {
@@ -968,19 +989,6 @@ footer {
     left: 28%;
     cursor: pointer;
     padding: 20px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: 467px;
-  }
-}
-
-@media screen and (max-width: 467px) {
-  .container {
-    max-width: none;
-    margin: 0 auto;
   }
 }
 
