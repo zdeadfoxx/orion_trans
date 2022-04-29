@@ -19,23 +19,28 @@
             <div class="container">
                 <div class="header__body">
                     <!-- Логотип сайта -->
-                    <div class="burger__img">
+                    <div class="burger__img menu-btn">
                         <img src="img/burgder1.jpg" alt="burgeer">
                     </div>
                     <!-- Меню в шапке -->
                     <nav class="header__menu">
                         <ul class="menu">
-                            <li><a href="#about__company" class="item__menu active">О компании</a></li>
-                            <li><a href="" class="item__menu">Преимущества</a></li>
-                            <li><a href="#questions" class="item__menu">Вопросы </a></li>
-                            <li><a href="#contact" class="item__menu">Контакты </a></li>
-                            <li><a href="" class="item__menu">Как мы работаем?</a></li>
+                            <li><a href="#about__company" class="item__menu active">О
+                                    компании</a></li>
+                            <li><a href="#advantages" class="item__menu menu-btn">Преимущества</a></li>
+                            <li><a href="#form__callback" class="item__menu">Вопросы </a>
+                            </li>
+                            <li><a href="#map__and-contact" class="item__menu">Контакты </a></li>
+                            <li><a href="#how__we--work" class="item__menu">Как мы работаем?</a></li>
                         </ul>
                     </nav>
                 </div>
 
             </div>
         </header>
+
+
+
         <!-- Фулл скрин  -->
         <div class="page__fullscreen">
             <div class="full__screen">
@@ -95,7 +100,7 @@
 
                     </div>
                 </section>
-                <div class="advantages">
+                <div class="advantages" id="advantages">
                     <div class="advantages__body">
                         <h2 class="advantages__title">
                             Наши преимущества
@@ -172,9 +177,9 @@
                 <section class="form__callback">
                     <h2 class="callback__title">Оставьте данные и мы вам перезвоним</h2>
                     <form action="" method="post" class="callback">
-                        <label for="name">Ваше имя:</label>
+                        <label for="name" class="callback__label">Ваше имя:</label>
                         <input type="text" class="from__text" name="name" placeholder="Имя " required>
-                        <label for="phone">Ваш телефон:</label>
+                        <label for="phone" class="callback__label">Ваш телефон:</label>
                         <input type="tel" class="from__phone" name="phone" placeholder="Телефон" required>
                         <button type="submit" class="form__btn">Закзать звонок</button>
                     </form>
@@ -224,5 +229,6 @@
     </footer>
     </div>
 </body>
+<script src="scripts/popup.js"></script>
 
 </html>

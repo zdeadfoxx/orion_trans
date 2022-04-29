@@ -6,7 +6,9 @@
     flex-direction: column;
     // .from__application
 
-    &__application {}
+    &__application {
+        margin-bottom: 50px;
+    }
 }
 
 .application {
@@ -32,6 +34,7 @@
         border-radius: 20px;
         margin-bottom: 50px;
         min-width: 800px;
+
     }
 
     // .application__btn
@@ -220,6 +223,20 @@ select {
 
 }
 
+@media screen and (max-width:767px) {
+    .container {
+        max-width: 479px;
+        margin: 0 auto;
+    }
+
+    .from__application {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width:479px) {
     .container {
         max-width: none;
@@ -252,6 +269,7 @@ select {
     label {
         padding: 10px;
         text-align: start;
+        font-size: 20px;
     }
 
     .application__form {}
@@ -266,5 +284,26 @@ select {
     textarea {
         border: 1px solid #000;
         margin: 10px 5px;
+    }
+
+    .list__car {
+        margin-left: 10px;
+    }
+
+    .application__btn {
+        margin-left: 10px;
+    }
+
+    .form__text {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .checkbox__text {
+        font-size: 20px;
+        max-width: 300px;
+        margin-left: 10px;
     }
 }

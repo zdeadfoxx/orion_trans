@@ -11,6 +11,10 @@
           flex-direction: column;
 }
 
+.from__application {
+  margin-bottom: 50px;
+}
+
 .application__title {
   font-size: 64px;
   text-align: center;
@@ -208,6 +212,28 @@ select {
   background-color: #eecfba;
 }
 
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 479px;
+    margin: 0 auto;
+  }
+  .from__application {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 479px) {
   .container {
     max-width: none;
@@ -243,6 +269,7 @@ select {
   label {
     padding: 10px;
     text-align: start;
+    font-size: 20px;
   }
   .input__form {
     font-size: 20px;
@@ -252,5 +279,27 @@ select {
   textarea {
     border: 1px solid #000;
     margin: 10px 5px;
+  }
+  .list__car {
+    margin-left: 10px;
+  }
+  .application__btn {
+    margin-left: 10px;
+  }
+  .form__text {
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10px;
+  }
+  .checkbox__text {
+    font-size: 20px;
+    max-width: 300px;
+    margin-left: 10px;
   }
 }
