@@ -1035,7 +1035,7 @@ header {
             transform: translateX(0);
   }
   .item__menu {
-    margin: 0 40px;
+    margin: 40px 40px;
   }
 }
 
