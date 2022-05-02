@@ -31,6 +31,7 @@ body {
     scroll-behavior: smooth;
 }
 
+
 /*Модификаторы для повторяющихся стилей*/
 .btn {
     align-items: center;
@@ -122,8 +123,13 @@ span {
 }
 
 /*При наведении на элементы меню*/
+// .item__menu:hover {
+//     text-decoration: underline;
+//     transition: all 0.4s linear 0.2s;
+// }
+
 .item__menu:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid #000;
     transition: all 0.4s linear 0.2s;
 }
 
@@ -192,11 +198,9 @@ span {
 .about__company {
     background: url('../img/34324324.jpg') no-repeat center center;
     background-size: cover;
-    padding: 100px;
-    width: 100vh;
-    margin: 0 auto;
-    height: auto;
-    margin-bottom: 50px;
+
+    margin-bottom: 100px;
+    height: 100vh;
 
 }
 
@@ -204,6 +208,11 @@ span {
     background-color: rgba(128, 128, 128, 0.508);
     padding: 15px;
     border-radius: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .about__title {
@@ -345,12 +354,16 @@ strong {
 .how__we--work {
     background: url('../img/work.png') 0 0 no-repeat;
     background-size: cover;
-    min-height: 500px;
+
     background-position: center;
     margin-bottom: 100px;
     padding: 50px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 
+}
 
 
 .work__title {
@@ -490,6 +503,7 @@ footer {
     display: flex;
     width: 100vh;
     height: auto;
+
     margin-bottom: 50px;
 }
 
@@ -541,24 +555,6 @@ footer {
 }
 
 
-header {
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-/* Гамбургер иконка */
-.menu-btn {
-
-    position: relative;
-    z-index: 2;
-    overflow: hidden;
-}
-
-
-
-
-
 
 
 /*For pc*/
@@ -598,9 +594,6 @@ header {
         margin-bottom: 20px;
     }
 
-
-
-
 }
 
 @media screen and(max-width:1200px) {
@@ -612,8 +605,6 @@ header {
         display: flex;
         flex-direction: column;
     }
-
-
 
     .item__menu {
         font-size: 26px;
@@ -654,12 +645,9 @@ header {
         margin-bottom: 20px;
     }
 
-
-
     .item__menu {
         font-size: 16px;
     }
-
 }
 
 @media screen and(max-width:976px) {
@@ -692,9 +680,8 @@ header {
         font-size: 14px;
     }
 
-    .active {
-        background-color: #fff;
-    }
+
+
 }
 
 @media screen and(max-width:767px) {
@@ -720,8 +707,6 @@ header {
         flex-direction: column;
     }
 
-
-
     .advantages__top,
     .advantages__bottom {
         margin: 0 20px;
@@ -731,11 +716,6 @@ header {
         margin: 20px;
     }
 
-
-
-
-    //@at-root
-
     .work__item:nth-child(1):after {
         content: url("../img/form.svg");
         position: absolute;
@@ -743,7 +723,6 @@ header {
         left: 32%;
         cursor: pointer;
         padding: 20px;
-
     }
 
     .work__item:nth-child(2)::after {
@@ -773,13 +752,10 @@ header {
         padding: 20px;
     }
 
-
     /*Форма заявок*/
-
     .callback__label {
         margin-bottom: 20px;
     }
-
 
     .callback__title {
         font-size: 26px;
@@ -790,8 +766,6 @@ header {
         flex-direction: column;
     }
 
-
-
     .info__callback {
         padding: 10px;
         margin: 10px;
@@ -801,7 +775,6 @@ header {
         font-size: 16px;
     }
 
-
     .from__text,
     .from__phone {
         align-self: start;
@@ -810,53 +783,44 @@ header {
         font-size: 16px;
     }
 
-
     .menu {
         display: flex;
         flex-direction: column;
-
-
     }
 
-    .item__menu {
-        font-size: 24px;
-        margin-top: 40px;
-        margin-bottom: 40px;
+    li {
+        margin: 20px 0px;
+        padding: 10px;
     }
 
-    /* Меню, которое будет появляться */
-
-
-    .burger__img img {
-        display: block;
-        cursor: pointer;
-        z-index: 11;
-    }
-
-
-
-    /* Меню, которое будет появляться */
-    .menu {
+    .header__menu {
+        padding-top: 120px;
         position: fixed;
         top: 0;
-        left: 0;
-        width: 100%;
+        z-index: 20;
+        display: flex;
+        flex-flow: column;
         height: 100%;
-        padding: 15px;
-        background: #fff;
-        transform: translateX(-100%);
-        transition: transform 0.5s;
-
+        background-color: #F9AFE9;
+        overflow-y: auto;
+        right: -100%;
+        transition: 0.8s;
     }
 
-    .menu.active {
-        transform: translateX(0);
-
-
+    .header__menu._active {
+        right: 0;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
-    .item__menu {
-        margin: 40px 40px;
+  
+
+
+
+
+
+    body._lock {
+        overflow: hidden;
     }
 
 }
@@ -868,7 +832,6 @@ header {
         margin: 0 auto;
     }
 
-
     .about__body {
         display: flex;
         justify-content: center;
@@ -876,8 +839,6 @@ header {
         flex-direction: column;
         padding-right: 20px;
     }
-
-
 
     .about__list {
         margin-right: 20px;
@@ -894,9 +855,6 @@ header {
         color: #000;
     }
 
-
-
-
     .advantages__top:first-child {
         padding: 20px;
     }
@@ -904,16 +862,11 @@ header {
     .about__company {
         max-width: 350px;
         padding: 10px;
-
     }
 
     .about__body {
         max-width: 300px;
     }
-
-
-
-
 
     .work__item {
         text-align: center;
@@ -923,8 +876,6 @@ header {
         font-size: 40px;
         font-weight: bold;
     }
-
-    //@at-root
 
     .work__item:nth-child(1):after {
         content: url("../img/form.svg");
@@ -970,11 +921,6 @@ header {
 
 }
 
-
-
-
-/**/
-/**/
 /*For pc*/
 @media screen and (max-width: 1920px) {
     .container {

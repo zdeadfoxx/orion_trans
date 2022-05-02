@@ -286,7 +286,7 @@ span {
 
 /*При наведении на элементы меню*/
 .item__menu:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #000;
   -webkit-transition: all 0.4s linear 0.2s;
   transition: all 0.4s linear 0.2s;
 }
@@ -374,17 +374,28 @@ span {
 .about__company {
   background: url("../img/34324324.jpg") no-repeat center center;
   background-size: cover;
-  padding: 100px;
-  width: 100vh;
-  margin: 0 auto;
-  height: auto;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  height: 100vh;
 }
 
 .about__body {
   background-color: rgba(128, 128, 128, 0.508);
   padding: 15px;
   border-radius: 10px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .about__title {
@@ -544,10 +555,19 @@ strong {
 .how__we--work {
   background: url("../img/work.png") 0 0 no-repeat;
   background-size: cover;
-  min-height: 500px;
   background-position: center;
   margin-bottom: 100px;
   padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
 }
 
 .work__title {
@@ -741,22 +761,6 @@ footer {
   cursor: pointer;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-/* Гамбургер иконка */
-.menu-btn {
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-}
-
 /*For pc*/
 @media screen and (max-width: 1920px) {
   .container {
@@ -889,9 +893,6 @@ header {
   .item__menu {
     font-size: 14px;
   }
-  .active {
-    background-color: #fff;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1003,39 +1004,36 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .item__menu {
-    font-size: 24px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  li {
+    margin: 20px 0px;
+    padding: 10px;
   }
-  /* Меню, которое будет появляться */
-  .burger__img img {
-    display: block;
-    cursor: pointer;
-    z-index: 11;
-  }
-  /* Меню, которое будет появляться */
-  .menu {
+  .header__menu {
+    padding-top: 120px;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    z-index: 20;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
     height: 100%;
-    padding: 15px;
-    background: #fff;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
+    background-color: #F9AFE9;
+    overflow-y: auto;
+    right: -100%;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
   }
-  .menu.active {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  .header__menu._active {
+    right: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
   }
-  .item__menu {
-    margin: 40px 40px;
+  body._lock {
+    overflow: hidden;
   }
 }
 
@@ -1127,8 +1125,6 @@ header {
   }
 }
 
-/**/
-/**/
 /*For pc*/
 @media screen and (max-width: 1920px) {
   .container {

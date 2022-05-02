@@ -19,19 +19,18 @@
             <div class="container">
                 <div class="header__body">
                     <!-- Логотип сайта -->
-                    <div class="burger__img menu-btn">
+                    <div class="burger__img">
                         <img src="img/burgder1.jpg" alt="burgeer">
                     </div>
                     <!-- Меню в шапке -->
                     <nav class="header__menu">
                         <ul class="menu">
-
-                            <li><a href="#about__company" class="item__menu menu-btn">О
+                            <li><a href="#about__company" class="item__menu burger__img">О
                                     компании</a></li>
-                            <li><a href="#advantages" class="item__menu menu-btn">Преимущества</a></li>
+                            <li><a href="#advantages" class="item__menu ">Преимущества</a></li>
                             <li><a href="#form__callback" class="item__menu">Вопросы </a>
                             </li>
-                            <li><a href="#map__and-contact" class="item__menu">Контакты </a></li>
+                            <li><a href="#contact" class="item__menu">Контакты </a></li>
                             <li><a href="#how__we--work" class="item__menu">Как мы работаем?</a></li>
                         </ul>
                     </nav>
@@ -56,10 +55,10 @@
         <main class="page">
             <div class="container">
                 <!-- Наши услуги -->
-                <div class="about__company">
+                <div class="about__company" id="about__company">
                     <div class="about__body">
                         <div class="about__title">
-                            <a href="#" id="about__company"></a>
+
                             <strong> Орион Транс</strong> -
                             качественный перегон машин по приемлемой стоимости
                         </div>
@@ -76,7 +75,7 @@
                         </ul>
                     </div>
                 </div>
-                <section class="how__we--work">
+                <section class="how__we--work" id="how__we--work">
                     <div class="work__body">
                         <h2 class="work__title title">Как мы работаем?</h2>
                         <div class="work__body">
@@ -122,8 +121,7 @@
                                 </div>
                                 <div class="ifno__text">
                                     Наши специалисты грамотно разработают маршрут и организуют перегон или доставкиу
-                                    в
-                                    день обращения
+                                    в день обращения
                                 </div>
                             </div>
                         </div>
@@ -175,14 +173,14 @@
                     </div>
                 </section>
                 <!-- Форма заявки -->
-                <section class="form__callback">
+                <section class="form__callback" id="form__callback">
                     <h2 class="callback__title">Оставьте данные и мы вам перезвоним</h2>
                     <form action="" method="post" class="callback">
                         <label for="name" class="callback__label">Ваше имя:</label>
                         <input type="text" class="from__text" name="name" placeholder="Имя " required>
                         <label for="phone" class="callback__label">Ваш телефон:</label>
                         <input type="tel" class="from__phone" name="phone" placeholder="Телефон" required>
-                        <button type="submit" class="form__btn">Закзать звонок</button>
+                        <button type="submit" class="form__btn">Заказть звонок</button>
                     </form>
                     <section class="info__callback">
                         <p class="info__text-callback">

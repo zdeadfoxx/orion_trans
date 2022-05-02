@@ -212,10 +212,6 @@ select {
   background-color: #eecfba;
 }
 
-.menu__close {
-  display: none;
-}
-
 @media screen and (max-width: 767px) {
   .container {
     max-width: 479px;
@@ -235,41 +231,6 @@ select {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  /* Меню, которое будет появляться */
-  .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    background: #fff;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
-  }
-  .menu.active {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  .menu {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  .menu__close {
-    position: absolute;
-    top: 10px;
-    font-size: 24px;
-    color: #000;
-    left: 30px;
-  }
-  .item__menu {
-    margin: 40px 40px;
   }
 }
 
