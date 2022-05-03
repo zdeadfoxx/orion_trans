@@ -1,6 +1,6 @@
 const burger = document.querySelector('.burger__img')
-const head__menu = document.querySelector('.header__menu');;
-
+const head__menu = document.querySelector('.header__menu');
+const callBack_btn = document.querySelector('.form__btn');
 
 if(burger){
     burger.addEventListener('click', function(e) 
@@ -11,7 +11,6 @@ if(burger){
 
 });
 }
-
 
 const item = document.querySelectorAll('.item__menu');
 
@@ -29,4 +28,12 @@ if(item.length >0){
             })
         });
     });
+}
+
+if(callBack_btn){
+    callBack_btn.addEventListener('click',CallBack);
+}
+function CallBack() {
+    const info = document.querySelector('.info__text-callback');
+    info.textContent = info.textContent == 'Данные отправлены' ? 'Данные отправлены' : 'Данные отправлены';
 }

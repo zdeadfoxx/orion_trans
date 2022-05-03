@@ -198,16 +198,14 @@ span {
 .about__company {
     background: url('../img/34324324.jpg') no-repeat center center;
     background-size: cover;
-
     margin-bottom: 100px;
-    height: 100vh;
+    border-radius: 20px;
 
 }
 
 .about__body {
     background-color: rgba(128, 128, 128, 0.508);
-    padding: 15px;
-    border-radius: 10px;
+    border-radius: 20px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -306,6 +304,7 @@ strong {
     max-width: 1300px;
     border: 2px dashed #079732;
     padding: 50px;
+    border-radius: 20px;
 }
 
 .info__text-callback {
@@ -352,25 +351,20 @@ strong {
 
 /*Как мы работаем*/
 .how__we--work {
-    background: url('../img/work.png') 0 0 no-repeat;
+    background: url('../img/work.png') no-repeat;
     background-size: cover;
-
     background-position: center;
     margin-bottom: 100px;
-    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-
+    border-radius: 20px;
 }
-
 
 .work__title {
     color: #fff;
+    margin-top: 10px;
 }
-
-
 
 .work__item {
     text-align: center;
@@ -489,7 +483,6 @@ strong {
 footer {
     background-color: gray;
     padding: 10px;
-
 }
 
 .info__item {
@@ -511,9 +504,11 @@ footer {
 .map__yandex {
     width: 960px;
     height: 450px;
+    border-radius: 20px;
 }
 
 .body__box {
+
     display: flex;
     width: 100%;
 }
@@ -528,6 +523,7 @@ footer {
 .contacnt__body {
     width: 960px;
     background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    border-radius: 20px;
 }
 
 .contact__title {
@@ -563,6 +559,8 @@ footer {
         max-width: 1600px;
     }
 
+
+
 }
 
 @media screen and(max-width:1600px) {
@@ -593,6 +591,7 @@ footer {
     .from__phone {
         margin-bottom: 20px;
     }
+
 
 }
 
@@ -648,6 +647,8 @@ footer {
     .item__menu {
         font-size: 16px;
     }
+
+
 }
 
 @media screen and(max-width:976px) {
@@ -720,7 +721,7 @@ footer {
         content: url("../img/form.svg");
         position: absolute;
         top: 100%;
-        left: 32%;
+        right: 20%;
         cursor: pointer;
         padding: 20px;
     }
@@ -729,7 +730,7 @@ footer {
         content: url("../img/call.png");
         position: absolute;
         top: 100%;
-        left: 32%;
+        right: 20%;
         cursor: pointer;
         padding: 20px;
     }
@@ -738,7 +739,7 @@ footer {
         content: url("../img/dogovor.png");
         position: absolute;
         top: 100%;
-        left: 32%;
+        right: 20%;
         cursor: pointer;
         padding: 20px;
     }
@@ -747,7 +748,7 @@ footer {
         content: url("../img/icon.png");
         position: absolute;
         top: 100%;
-        left: 32%;
+        right: 20%;
         cursor: pointer;
         padding: 20px;
     }
@@ -789,8 +790,8 @@ footer {
     }
 
     li {
-        margin: 20px 0px;
-        padding: 10px;
+        margin: 10px 0px;
+        padding: 5px;
     }
 
     .header__menu {
@@ -811,17 +812,21 @@ footer {
         right: 0;
         display: block;
         background-color: rgba(0, 0, 0, 0.5);
+        overflow-x: auto;
     }
 
-  
+    .item__menu {
+        color: #fff;
+    }
 
-
-
-
+    .how__we--work {
+        padding: 10px;
+    }
 
     body._lock {
         overflow: hidden;
     }
+
 
 }
 
@@ -860,13 +865,9 @@ footer {
     }
 
     .about__company {
-        max-width: 350px;
         padding: 10px;
     }
 
-    .about__body {
-        max-width: 300px;
-    }
 
     .work__item {
         text-align: center;
@@ -917,6 +918,7 @@ footer {
         padding: 20px;
         z-index: 4;
     }
+
 
 
 }

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="test">
         <div class="burger">
-            <img  src="../img/burgder.jpg" alt="" class="burger__img">
+            <img src="../img/burgder.jpg" alt="" class="burger__img">
         </div>
         <nav class="header__menu">
             <ul class="menu">
@@ -22,8 +23,28 @@
             </ul>
         </nav>
     </div>
+           <!-- Форма заявки -->
+           <section class="form__callback" id="form__callback">
+                    <h2 class="callback__title">Оставьте данные и мы вам перезвоним</h2>
+                    <form action="" method="post" class="callback">
+                        <label for="name" class="callback__label">Ваше имя:</label>
+                        <input type="text" class="from__text" name="name" placeholder="Имя " required>
+                        <label for="phone" class="callback__label">Ваш телефон:</label>
+                        <input type="tel" class="from__phone" name="phone" placeholder="Телефон" required>
+                        <button type="submit" class="form__btn">Заказть звонок</button>
+                    </form>
+                    <section class="info__callback">
+                        <p class="info__text-callback">
+                            Оставьте свои контактные данные,мы свяжемся с вами, сможем обсудить все детали
+                            и проконсультировать по интересующему вопросу
+                        </p>
+                    </section>
+                </section>
+
 
 </body>
 <script src="js.js"></script>
+<script src="../scripts/popup.js"></script>
+
 
 </html>
