@@ -34,7 +34,6 @@
   padding: 40px;
   border-radius: 20px;
   margin-bottom: 50px;
-  min-width: 800px;
 }
 
 .application__btn {
@@ -251,6 +250,7 @@ select {
   .application__form {
     margin: 0 auto;
     padding: 0;
+    margin: 10px;
   }
   __form {
     display: -webkit-box;
