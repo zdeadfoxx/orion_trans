@@ -495,14 +495,14 @@ strong {
 }
 
 .info__callback {
-  max-width: 1300px;
+  max-width: 1000px;
   border: 2px dashed #079732;
-  padding: 50px;
+  padding: 25px;
   border-radius: 20px;
 }
 
 .info__text-callback {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.5;
   font-style: italic;
 }
@@ -525,7 +525,7 @@ strong {
 }
 
 .callback__title {
-  font-size: 64px;
+  font-size: 54px;
   text-align: center;
   color: #000;
   margin-bottom: 20px;
@@ -707,42 +707,41 @@ footer {
 
 /*Карта и контакты*/
 .map__and-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100vh;
-  height: auto;
   margin-bottom: 50px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 /*Карта*/
 .map__yandex {
-  width: 960px;
-  height: 450px;
-  border-radius: 20px;
+  min-width: 100vw;
 }
 
 .body__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*Контакты*/
 .contact {
-  width: 960px;
   padding-left: 10px;
 }
 
 .contacnt__body {
-  width: 960px;
+  min-width: 100vw;
   background: linear-gradient(45deg, #EECFBA, #C5DDE8);
-  border-radius: 20px;
 }
 
 .contact__title {
-  font-size: 64px;
+  font-size: 44px;
   margin-bottom: 25px;
   color: #000;
   text-align: start;
@@ -894,6 +893,15 @@ footer {
   }
   .item__menu {
     font-size: 14px;
+  }
+  .map__yandex {
+    width: 80vh;
+  }
+  .contacnt__body {
+    width: 80vh;
+  }
+  .body__box {
+    width: 80vh;
   }
 }
 
@@ -1047,6 +1055,42 @@ footer {
   .about__list-item {
     font-size: 16px;
   }
+  .map__yandex {
+    width: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacnt__body {
+    width: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .body__box {
+    width: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (max-width: 467px) {
@@ -1130,6 +1174,43 @@ footer {
     cursor: pointer;
     padding: 20px;
     z-index: 4;
+  }
+  /*Карта*/
+  .map__yandex {
+    width: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacnt__body {
+    width: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .body__box {
+    width: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
