@@ -86,9 +86,17 @@ textarea {
 
 select {
     align-self: flex-start;
-    padding: 20px;
+
     margin-left: 0;
     font-size: 20px;
+}
+
+.input__form {
+    margin: 0 40px;
+}
+
+option {
+    margin: 0 40px;
 }
 
 .input {
