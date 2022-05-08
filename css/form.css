@@ -15,6 +15,23 @@
   margin-bottom: 50px;
 }
 
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.application__form {
+  background-color: #84411585;
+}
+
 .application__title {
   font-size: 44px;
   text-align: center;
@@ -30,7 +47,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 2px solid orange;
+  border: 2px solid #84411585;
   padding: 40px;
   border-radius: 20px;
   margin-bottom: 50px;

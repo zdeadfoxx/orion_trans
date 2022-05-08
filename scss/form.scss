@@ -8,7 +8,20 @@
 
     &__application {
         margin-bottom: 50px;
+
     }
+}
+
+.page {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.application__form {
+    background-color: #84411585;
 }
 
 .application {
@@ -29,7 +42,7 @@
     &__form {
         display: flex;
         flex-direction: column;
-        border: 2px solid orange;
+        border: 2px solid #84411585;
         padding: 40px;
         border-radius: 20px;
         margin-bottom: 50px;
