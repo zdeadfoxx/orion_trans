@@ -180,7 +180,7 @@ span {
 .body__title {
     font-size: 64px;
     margin-bottom: 25px;
-    color: #fff;
+    color: #000;
     max-width: 800px;
     text-align: center;
 }
@@ -234,7 +234,7 @@ strong {
 }
 
 .about__list-item {
-    margin: 40px;
+    margin: 20px;
 }
 
 /*Карточки с примуществами*/
@@ -319,6 +319,7 @@ strong {
     background-color: #ffd9003d;
     border-radius: 20px;
     padding: 10px;
+    margin: 20px 0px;
 }
 
 .callback__title {
@@ -351,14 +352,15 @@ strong {
 
 /*Как мы работаем*/
 .how__we--work {
-    background: url('../img/work1.png') no-repeat;
+    background: url('../img/photo_05.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     margin-bottom: 100px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    height: 150vh;
 }
 
 .work__title {
@@ -722,16 +724,28 @@ footer {
     }
 
     .page__fullscreen {
-        background: url('../img/photo_jpg.jpg') no-repeat;
+
+        background: url('../img/photo_2022.jpg') no-repeat;
         background-size: cover;
         height: 100vh;
         padding: 100px;
     }
 
     .how__we--work {
-        background: url('../img/photo_2022.jpg') no-repeat;
+        background: url('../img/photo_jpg.jpg') no-repeat;
         background-size: cover;
         background-position: center;
+        height: auto;
+    }
+
+    .body__title {
+
+        color: #fff;
+
+    }
+
+    .callback {
+        margin: 20px 0;
     }
 }
 
