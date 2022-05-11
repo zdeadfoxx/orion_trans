@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="ru-RU">
 
@@ -48,12 +53,12 @@
                 <!-- Форма заявки -->
                 <section class="from__application" id="application">
                     <h2 class="application__title">Оставить заявку</h2>
-                    <form action="" class="application__form">
+                    <form action="email.php" class="application__form" method="post">
                         <label for="first__city">Укажите город отправления:</label>
                         <input type="text" class="input__form" placeholder="Город отправления" name="first__city"
                             required />
-                        <label for="Second__city">Укажите город назначения:</label>
-                        <input type="text" class="input__form" placeholder="Город назначения" name="Second__city"
+                        <label for="second__city">Укажите город назначения:</label>
+                        <input type="text" class="input__form" placeholder="Город назначения" name="second__city"
                             required /><!--  -->
                         <label for="car">Выберите машину:</label>
                         <select name="car" id="#form" class="list__car">
@@ -79,6 +84,7 @@
                                 </p>
                             </div>
                         </a>
+                    
                     </form>
                 </section>
             </div>
