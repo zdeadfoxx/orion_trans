@@ -397,15 +397,19 @@ span {
           flex-direction: column;
 }
 
-.about__title {
-  color: #fff;
-}
-
 .about__list-item {
   color: #fff;
 }
 
+.about__list-item::before {
+  content: url("../img/svg/check.svg");
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
 .about__title {
+  color: #fff;
   text-align: center;
 }
 
@@ -420,6 +424,7 @@ strong {
 
 .about__list-item {
   margin: 20px;
+  text-align: start;
 }
 
 /*Карточки с примуществами*/
@@ -471,7 +476,6 @@ strong {
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
-  border: 2px solid #000;
 }
 
 .block__info:hover {
@@ -968,13 +972,13 @@ footer {
             align-items: center;
   }
   .page__fullscreen {
-    background: url("../img/fullscreen.jpg") no-repeat;
+    background: url("../img/photo_2022.jpg") no-repeat;
     background-size: cover;
     height: 100vh;
     padding: 100px;
   }
   .how__we--work {
-    background: url("../img/work_mb.jpg") no-repeat;
+    background: url("../img/photo_jpg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     height: auto;
