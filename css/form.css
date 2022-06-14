@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /*Стили для страницы application.html */
 /*Для логотипа */
+a{
+  color: #000;
+}
 .from {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,6 +188,7 @@ option {
 }
 
 .popup__title {
+  text-align: center;
   font-size: 16px;
   margin-bottom: 20px;
 }

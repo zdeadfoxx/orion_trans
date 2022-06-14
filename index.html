@@ -170,12 +170,13 @@
                 <!-- Форма заявки -->
                 <section class="form__callback" id="form__callback">
                     <h2 class="callback__title">Оставьте данные и мы вам перезвоним</h2>
-                    <form action="" method="post" class="callback">
+                    <form action="" method="" class="callback">
                         <label for="name" class="callback__label">Ваше имя:</label>
                         <input type="text" class="from__text" name="name" placeholder="Имя " required />
                         <label for="phone" class="callback__label">Ваш телефон:</label>
-                        <input type="tel" class="from__phone" name="phone" placeholder="Телефон" required />
-                        <button type="submit" class="form__btn">Заказать звонок</button>
+                        <input type="tel" class="from__phone" name="phone" placeholder="Телефон" required
+                            maxlength="11" />
+                        <button class="form__btn">Заказать звонок</button>
                     </form>
                     <section class="info__callback">
                         <p class="info__text-callback">
@@ -209,6 +210,9 @@
         </div>
     </footer>
 </body>
-<script src="scripts/popup.js"></script>
+<script src="scripts/popup.js">
+
+
+</script>
 
 </html>
