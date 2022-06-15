@@ -465,6 +465,7 @@ strong {
 
 /*Карточки примуществ*/
 .block__info {
+  border: 5px solid #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,12 +479,6 @@ strong {
   cursor: pointer;
 }
 
-.block__info:hover {
-  background-color: gray;
-  color: #fff;
-  -webkit-transition: all 0.2s ease-in-out 0.1s;
-  transition: all 0.2s ease-in-out 0.1s;
-}
 
 .info__title {
   text-align: center;
